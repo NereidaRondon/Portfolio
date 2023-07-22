@@ -15,11 +15,11 @@ export default function Home(){
         <Typography className='title' sx={{pt:2,}} bgcolor='dark' variant='h2' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
         <Typography className='subtitle' sx={{py:0}} bgcolor='dark' variant='h4'>
-        Instructional Designer</Typography>
+        Frontend Developer</Typography>
 
 
           <Box className=''>
-            <Typography  sx={{py:2, pt:8}} bgcolor='dark' variant='h4' >Welcome to my portfolio website!</Typography>
+            <Typography  sx={{py:2, pt:8}} bgcolor='dark' variant='h4' >Hello!</Typography>
           </Box>
           <Box className=''>
             <Typography variant='h6' sx={{px:2, py:2, textAlign: 'left'}}>
