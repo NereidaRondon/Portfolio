@@ -1,17 +1,20 @@
+import hamster from '../assets/hamster.webp';
+import { Container } from '@mui/material';
+
 export default function Error(){
 
 
   return(
     <>
-      <br>
-      </br>
-      <br>
-      </br>
-      <h1>ERROR 404: page not found</h1>
-      <br>
-      </br>
-      <br>
-      </br>
+      <Container className='' sx={{bgcolor:'#bdbdbd', pt:10,}} maxWidth="xxl">
+
+        <img src={hamster} width='400'/>
+        
+      </Container>
+      <Container className='' sx={{bgcolor:'#bdbdbd', pb:10}} maxWidth="xxl">
+        <a href="http://www.freepik.com">Designed by stories / Freepik</a>
+      </Container>
+
     </>
   );
   

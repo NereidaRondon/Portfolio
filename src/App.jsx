@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
 import NavBar from './components/NavBar';
 import AppRouter from './components/AppRouter';
-import SocialIcons from './components/SocialIcons';
+import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -16,7 +16,7 @@ export default function App() {
       <NavBar />
       <ScrollToTop />
       <AppRouter />
-      <SocialIcons /> 
+      <Footer /> 
     </React.Fragment>
   );
 }

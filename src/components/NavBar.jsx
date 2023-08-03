@@ -11,7 +11,7 @@ export default function NavBar() {
 
   return (
     
-      <Navbar collapseOnSelect bg="dark" expand="lg" variant="dark" sticky='top'>
+      <Navbar className='navbar--comp' collapseOnSelect  expand="lg" variant="dark" sticky='top'>
       <Container bg="dark" maxWidth='lg'>
 
           <Typography variant='h4' fontFamily={'Shadows Into Light Two'}>
@@ -27,7 +27,7 @@ export default function NavBar() {
               <Nav className="m-auto justify-content-center">
                 
                 <LinkContainer to="/">
-                  <Nav.Link className='pt-1 ps-4 pe-4 navlink home--link' sx={{'&:hover':{color: pink }}}>Home</Nav.Link>
+                  <Nav.Link className='pt-1 ps-4 pe-4 navlink home--link' sx={{}}>Home</Nav.Link>
                 </LinkContainer>
 
                 <LinkContainer to="/projects">
