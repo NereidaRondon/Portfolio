@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import Approach from './Approach';
+import Error from './Error';
 import Projects from './Projects';
 import Media from './Media';
 import Contact from './Contact';
@@ -22,8 +22,6 @@ export default function AppRouter() {
 
       <Route exact path="/" element={<Home />} />
 
-      <Route path="/approach" element={<Approach />} />
-
       <Route path="/projects" element={<Projects />} />
 
       <Route path="/media" element={<Media />} />
@@ -40,7 +38,7 @@ export default function AppRouter() {
       <Route path="/tour" element={<Tour />} />
       <Route path="/addieSB" element={<AddieSB />} />
       <Route path="/phishingSB" element={<PhishingSB />} />
-      <Route path="/approach" element={<Approach />} />
+      <Route path="*" element={<Error />} />
 
     </Routes>
   );

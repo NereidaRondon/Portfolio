@@ -35,14 +35,6 @@ font-family: 'Roboto', sans-serif;
   animation: bounce 1.75s 1 ease-in alternate;
   top:50%;
 }
-/*@keyframes bounce {
-  0% {
-    transform: translateY(-200px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-} */
 
 /* Down, up,  */
     @keyframes bounce {
@@ -58,12 +50,20 @@ font-family: 'Roboto', sans-serif;
 /*!---------------------NAV BAR-------------------- */
 .navlink{
   transition: all 500ms ease-in-out;
-  padding-bottom: 2px;
+  margin-bottom: 4px;
+  border-bottom: 2px solid rgba(2, 136, 209, 0);
 }
 .navlink:hover{
-  filter: drop-shadow(2px 2px 1px rgb(2, 136, 209));
+  filter: drop-shadow(1px 1px 1px rgb(2, 136, 209));
 
 }
+.home--link:hover,
+.projects--link:hover,
+.media--link:hover,
+.contact--link:hover {
+  border-bottom: 2px solid rgb(2, 136, 209);
+}
+
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
@@ -78,51 +78,30 @@ font-family: 'Roboto', sans-serif;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(.75px .75px .10px black);
 }
-
-/*! --------------APPROACH Carousel---------------- */
-.approach--carousel{
-  padding:  0;
-  margin: auto;
-  
+.skills--container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 }
-@media screen and (max-width: 900px){
-  .approach--videos{
-    width: 512px;
-    height: 288px;
-  }
-  .approach--carousel{
-    width: 528px;
-    height: 297px;
-    margin-bottom: 200px;
-  }
+
+.skill{
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, .5));
+  transition: all 200ms ease-in-out;
+}
+
+.skill:hover{
+  transform:scale(1.1);
 }
 
 @media screen and (max-width: 500px){
-  .approach--videos{
-    width: 320px;
-    height: 180px;
-  }
-  .approach--carousel{
-    width: 336px;
-    height: 189px;
-    margin:2rem auto 3rem auto;
-  }
   .bitmoji{
     width: 80%;
   }
 }
 
-@media screen and (max-width: 350px){
-  .approach--videos{
-    width: 231px;
-    height: 139px;
-  }
-  .approach--carousel{
-    width: 248px;
-    height: 139px;
-  }
 
-}
 /*! ------------------ABOUT--------------------- */
 .about{
     background: linear-gradient(150deg,   

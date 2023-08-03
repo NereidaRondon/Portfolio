@@ -27,23 +27,19 @@ export default function NavBar() {
               <Nav className="m-auto justify-content-center">
                 
                 <LinkContainer to="/">
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' sx={{'&:hover':{color: pink }}}>Home</Nav.Link>
+                  <Nav.Link className='pt-1 ps-4 pe-4 navlink home--link' sx={{'&:hover':{color: pink }}}>Home</Nav.Link>
                 </LinkContainer>
 
                 <LinkContainer to="/projects">
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Projects</Nav.Link>
-                </LinkContainer>
-
-                <LinkContainer to="/approach">  
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink'>Approach</Nav.Link>
+                  <Nav.Link className='pt-1 ps-4 pe-4 navlink projects--link' >Projects</Nav.Link>
                 </LinkContainer>
 
                 <LinkContainer to="/media">
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Media</Nav.Link>
+                  <Nav.Link className='pt-1 ps-4 pe-4 navlink media--link' >Media</Nav.Link>
                 </LinkContainer>  
 
                 <LinkContainer to="/contact">
-                  <Nav.Link className='pt-1 ps-5 pe-5 navlink' >Contact</Nav.Link>
+                  <Nav.Link className='pt-1 ps-4 pe-4 navlink contact--link' >Contact</Nav.Link>
                 </LinkContainer>
 
 
