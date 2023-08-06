@@ -32,7 +32,7 @@ export default function Projects() {
 
   return (
 
-    <Container className='projects--container' sx={{bgcolor:'#bdbdbd', pb:10}} maxWidth='xxl'> 
+    <Container className='projects--container shadow' sx={{bgcolor:'#bdbdbd', pb:10, boxShadow: 20}} maxWidth='md'> 
       
       
 
@@ -41,10 +41,10 @@ export default function Projects() {
     <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Web Design</Typography>
 
       <Box sx={{ flexGrow: 1 }}>
-      <Grid className='m-0' container spacing={{ xs: 5, md: 7, lg: 9 }} columns={{ xs: 12, sm: 8, md: 12, lg: 12}}>
+      <Grid className='m-0' container spacing={{ xs: 5, md: 7, lg: 9 }} columns={{ xs: 1, sm: 2, md: 2, lg:2}}>
 
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={1} md={2} lg={3}>
             <Link to="https://myweatherdashboard.netlify.app/" target='_blank'>
               <Item sx={{ boxShadow: 10 }}>
                 <Card sx={{ boxShadow: 10 }}>
@@ -63,7 +63,7 @@ export default function Projects() {
             </Link>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={1} md={2} lg={3}>
             <Link to="https://nereidarondon.github.io/MCUMovies/" target='_blank'>
               <Item sx={{ boxShadow: 10 }}>
                 <Card sx={{ boxShadow: 10 }}>
@@ -81,7 +81,7 @@ export default function Projects() {
             </Link>
           </Grid>
 
-         <Grid item xs={12} md={6} lg={4}>
+         <Grid item xs={1} md={2} lg={3}>
           <Link to="https://nereidarondon.github.io/Gradebook/" target='_blank'>
             <Item sx={{ boxShadow: 10 }}>
               <Card sx={{ boxShadow: 10 }}>
@@ -99,7 +99,7 @@ export default function Projects() {
           </Link>
         </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={1} md={2} lg={3}>
             <Link to="https://xoxotictactoe.netlify.app/" target='_blank'>
               <Item sx={{ boxShadow: 10 }}>
                 <Card sx={{ boxShadow: 10 }}>
@@ -117,7 +117,7 @@ export default function Projects() {
             </Link>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={1} md={2} lg={3}>
             <Link to="https://clicklist.netlify.app/" target='_blank'>
               <Item sx={{ boxShadow: 10 }}>
                 <Card sx={{ boxShadow: 10 }}>
@@ -135,7 +135,7 @@ export default function Projects() {
             </Link>
           </Grid>
 
-          <Grid item xs={12} md={6} lg={4}>
+          <Grid item xs={1} md={2} lg={3}>
             <Link to="https://nereidarondon.github.io/Game-Kinda/" target='_blank'>
               <Item sx={{ boxShadow: 10 }}> 
                 <Card sx={{ boxShadow: 10 }}>

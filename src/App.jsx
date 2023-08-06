@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Container } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -13,10 +14,14 @@ export default function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-      <NavBar />
-      <ScrollToTop />
-      <AppRouter />
-      <Footer /> 
+        <Container className='main--container' maxWidth="xxl">
+
+          <NavBar />
+          <ScrollToTop />
+          <AppRouter />
+          <Footer /> 
+        
+        </Container>
     </React.Fragment>
   );
 }

@@ -18,23 +18,23 @@ export default function Media() {
 
   return (
 
-    <Container className='media--container' sx={{bgcolor:'#bdbdbd', pb:10}} maxWidth='xxl'> 
+    <Container className='media--container shadow' sx={{bgcolor:'#bdbdbd', pb:10, boxShadow:20}} maxWidth='md'> 
       
       <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Camtasia Videos</Typography>
 
       <Box sx={{ flexGrow: 1 }}>
       
-      <Grid className='m-0' container spacing={{ xs: 2, sm: 5, lg: 8 }} columns={{ xs: 12, sm: 8, md: 12, lg: 12}}>
+      <Grid className='m-0' container spacing={{ xs: 2, sm: 4, lg: 6 }} columns={{ xs: 12, sm: 12, md: 6, lg: 6}}>
 
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} md={6} lg={6}>
             <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/aBe0dyqJVPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={6}>
+          <Grid item xs={12} md={6} lg={6}>
             <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/-HlqCOQSOS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </Grid>
 
-          <Grid item xs={12} md={12} lg={12}>
+          <Grid item xs={12} md={6} lg={6}>
             <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/wA9rmMTNssA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </Grid>
       

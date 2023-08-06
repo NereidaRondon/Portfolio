@@ -7,6 +7,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 import './index.css';
 import CssBaseline from '@mui/material/CssBaseline';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 
 let theme = createTheme();

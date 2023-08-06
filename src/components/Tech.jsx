@@ -7,8 +7,16 @@ export default function Tech() {
   return (
     <React.Fragment>
 
-      <Container className='animated ' maxWidth="lg" sx={{py:7, bgcolor:'#bdbdbd'}}>
-        <Container className='skills--wrapper' maxWidth="lg" sx={{p:1}}>
+      <Container className='' maxWidth="lg" sx={{py:7, bgcolor:'#bdbdbd'}} >
+        <Container className='skills--wrapper' maxWidth="lg" sx={{p:1}} 
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="35"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
           <Typography className='title title-dark-bg' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
 
           <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', p:3}}>

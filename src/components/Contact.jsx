@@ -12,7 +12,7 @@ export default function Contact(){
   // add back in later (data-netlify="true")
   return(
     
-    <Container id='contact' className='' sx={{bgcolor:'#bdbdbd'}} maxWidth='xxl'>
+    <Container id='contact' className='shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 20}} maxWidth='md'>
         
     <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'} >Want to work together? Contact me!</Typography>
 

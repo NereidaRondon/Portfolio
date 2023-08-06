@@ -6,12 +6,12 @@ export default function Error(){
 
   return(
     <>
-      <Container className='' sx={{bgcolor:'#bdbdbd', pt:10,}} maxWidth="xxl">
+      <Container sx={{bgcolor:'#bdbdbd', pt:5,}} maxWidth="md">
 
-        <img src={hamster} width='400'/>
+        <img className='error' src={hamster} width='500'/>
         
       </Container>
-      <Container className='' sx={{bgcolor:'#bdbdbd', pb:10}} maxWidth="xxl">
+      <Container sx={{bgcolor:'#bdbdbd', pb:5}} maxWidth="md">
         <a href="http://www.freepik.com">Designed by stories / Freepik</a>
       </Container>
 

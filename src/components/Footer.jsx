@@ -13,7 +13,7 @@ export default function SocialIcons() {
   const year = date.getFullYear();
   
   return (
-    <Container className='footer' maxWidth='xxl'>
+    <Container className='footer shadow' maxWidth='md' sx={{ boxShadow: 20}}>
 
       <Box className='' sx={{ py: 3}}>
         
