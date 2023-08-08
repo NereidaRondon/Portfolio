@@ -4,6 +4,54 @@ import { Container, Typography, Box } from '@mui/material';
 
 export default function Tech() {
 
+  const skillIconDetails = [
+    {
+      link:'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+      image:'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg',
+      alt:'JavaScript'
+    },
+    {
+      link:'https://git-scm.com/',
+      image:'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg',
+      alt:'Git'
+    },
+    // {
+    //   link:,
+    //   image:,
+    //   alt:
+    // },
+    // {
+    //   link:,
+    //   image:,
+    //   alt:
+    // },
+    // {
+    //   link:,
+    //   image:,
+    //   alt:
+    // },
+    // {
+    //   link:,
+    //   image:,
+    //   alt:
+    // }
+  ];
+
+  function SkillIcon(){
+
+    return(
+
+      skillIconDetails.map((item, index)=>{
+        
+        <Box key={index} className='skill' sx={{m:2 }}>
+          <a  href={item.link} target="_blank" rel="noreferrer">
+            <img src={item.image} width="70" height="70" alt={item.alt} /></a>
+        </Box>
+        
+      })
+    );
+  }
+
   return (
     <React.Fragment>
 
@@ -17,10 +65,14 @@ export default function Tech() {
             data-aos-mirror="true"
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
+
           <Typography className='title title-dark-bg' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
 
-          <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', p:3}}>
-            <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="70" height="70" alt="JavaScript" /></a></Box>
+          <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', p:3}}>   
+                 
+<SkillIcon />
+
+             <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="70" height="70" alt="JavaScript" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://git-scm.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg" width="70" height="70" alt="Git" /></a></Box>
 
@@ -38,20 +90,19 @@ export default function Tech() {
 
             <Box className='skill' sx={{m:2 }}><a  href="https://mui.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" width="70" height="70" alt="Material UI" /></a></Box>
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" width="70" height="70" alt="Webpack" /></a></Box>
+            {/* <Box className='skill' sx={{m:2 }}><a  href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" width="70" height="70" alt="Webpack" /></a></Box> */}
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="70" height="70" alt="NodeJS" /></a></Box>
+            {/* <Box className='skill' sx={{m:2 }}><a  href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="70" height="70" alt="NodeJS" /></a></Box> */}
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="70" height="70" alt="MySQL" /></a></Box>
+             <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="70" height="70" alt="MySQL" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="70" height="70" alt="Firebase" /></a></Box>
+            
+            <Box className='skill' sx={{m:2 }}><a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="70" height="70" alt="Figma" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="70" height="70" alt="Photoshop" /></a></Box>
-
+ 
             <Box className='skill' sx={{m:2 }}><a  href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="70" height="70" alt="Illustrator" /></a></Box>
-
-            <Box className='skill' sx={{m:2 }}><a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="70" height="70" alt="Figma" /></a></Box>
-        
 
           </Container>
 

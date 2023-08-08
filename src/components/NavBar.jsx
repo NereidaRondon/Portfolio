@@ -4,7 +4,6 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../assets/myLogo.svg';
-import { pink } from '@mui/material/colors';
 
 export default function NavBar() {
 
@@ -12,7 +11,7 @@ export default function NavBar() {
   return (
     
       <Container className='navbar--comp shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 20}} maxWidth='md'>
-        <Navbar expand="md" collapseOnSelect  variant="dark" sticky='top'>
+        <Navbar expand="xl" collapseOnSelect  variant="dark" sticky="top">
           <Container>
 
             <Typography variant='h4' fontFamily={'Shadows Into Light Two'}>

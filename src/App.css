@@ -3,7 +3,10 @@
 font-family: 'Shadows Into Light', cursive;
 font-family: 'Roboto', sans-serif;
 */
- 
+ /* :root {
+   --animate-duration: 2s; 
+  --animate-delay: 5s;
+} */
 
 /* *{
   border: 2px solid rgb(209, 13, 13);
@@ -205,6 +208,10 @@ font-family: 'Roboto', sans-serif;
   #0f1112, #0a0c0d, 
   #050607, #000000);
 }
+.medium--logo{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  margin: 0 40px;
+}
 
 /*! ------------------ABOUT--------------------- */
 .about{
@@ -248,11 +255,7 @@ font-family: 'Roboto', sans-serif;
   opacity: 1;
   
 }
-@media screen and (max-width: 1300px){
-  .cards{
-    height: 275px;
-  }
-}
+
 
 @media screen and (max-width: 1000px){
   .tech{
@@ -296,9 +299,6 @@ font-family: 'Roboto', sans-serif;
     width: 300px;
     padding: 1rem 0;
   }
-  .cards{
-    height: 200px;
-  }
 }
 @media screen and (max-width: 400px){
   .course--frame{
@@ -311,9 +311,6 @@ font-family: 'Roboto', sans-serif;
     width: 250px;
   }
 
-  .cards{
-    height: 150px;
-  }
 } 
 @media screen and (max-width: 250px){
   .course--frame{
@@ -328,6 +325,7 @@ font-family: 'Roboto', sans-serif;
 
   .cards{
     height: 100px;
+    
   }
 } 
 /* !--------------------MEDIA------------------------- */
