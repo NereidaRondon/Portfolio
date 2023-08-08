@@ -22,10 +22,10 @@ font-family: 'Roboto', sans-serif;
 .main--container{
   /* background: linear-gradient(200deg, #0288d1, #9c27b0, #0288d1, #9c27b0 ); */
 
-  background: linear-gradient(200deg, #0288d1,#9c27b0 90.71%),
-            linear-gradient(127deg, #9c27b0, #0288d1 60.71%),
-            linear-gradient(250deg, #0288d1, #9c27b0 30%);
-
+  background: linear-gradient(250deg, #02d113, #e63703 60%);
+            /*linear-gradient(200deg, #0288d1,#9c27b0 90.71%),
+              linear-gradient(127deg, #9c27b0, #0288d1 60.71%),
+              linear-gradient(250deg, #0288d1, #9c27b0 30%); */
   background-size: cover;
   height: 100%;
 }
