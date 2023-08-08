@@ -349,6 +349,6 @@ font-family: 'Roboto', sans-serif;
 /*! -----------ERROR 404 PAGE------------------------ */
 @media screen and (max-width: 500px){
   .error{
-    width: 300px;
+    width: 280px;
   }
 }
