@@ -39,7 +39,7 @@ font-family: 'Roboto', sans-serif;
         #9c27b0 100%
     );
     background-size: 300%;
-    animation: bg-animation 12s infinite alternate;
+    animation: bg-animation 15s infinite alternate;
 }
 
 @keyframes bg-animation {
