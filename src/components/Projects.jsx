@@ -89,7 +89,7 @@ export default function Projects() {
 
   return (
 
-    <Container className='projects--container shadow' sx={{bgcolor:'#bdbdbd', pb:10, boxShadow: 20}} maxWidth='md'> 
+    <Container id='projects' className='projects--container shadow' sx={{bgcolor:'#eeeeee', pb:10, boxShadow: 20}} maxWidth='md'> 
       
       <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
 

@@ -6,34 +6,57 @@ import Image from 'react-bootstrap/Image';
 
 export default function Home(){
 
+   function About(){
+      return(
+        <Container sx={{bgcolor:'#eeeeee', my:2}} maxWidth="md">
+          <Box className=''
+            data-aos="fade-up"
+            data-aos-offset="50"
+            data-aos-delay="20"
+            data-aos-duration="750"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center">
+
+            <Typography className='title' sx={{pt:2, pb:2}} bgcolor='dark' variant='h3' fontFamily={'Shadows Into Light Two'}>About Me</Typography>
+
+            <Typography variant='h6' sx={{px:8, py:1, textAlign: 'left'}}>
+
+              My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm also interested in leveraging emerging technologies to optimize learning journeys.
+            </Typography>
+
+            <Typography variant='h6' sx={{px:8, py:1, textAlign: 'left'}}>
+            Explore my projects and experience below. Whether you're seeking a dedicated team member or looking to collaborate, I'm just a message away. Let's connect!
+            </Typography>
+          </Box>
+        </Container>
+      );
+    }
+  
 
   return(
     <>
-      <Container id='home' className='shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 20}} maxWidth="md">
+      <Container id='home' className='shadow' sx={{bgcolor:'#eeeeee', boxShadow: 20}} maxWidth="md">
         <Image className='bitmoji animated animatedFadeInUp fadeInUp' src={bitmoji} alt="Nereida's bitmoji" />
         
         <Typography className='title' sx={{pt:2,}} bgcolor='dark' variant='h3' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
-        <Typography className='subtitle' sx={{py:0, pb:5}} bgcolor='dark' variant='h5'>
-        Frontend Developer</Typography>
-
-
-
-          <Box className=''>
-            <Typography variant='h6' sx={{px:8, py:1, textAlign: 'left'}}>
-            Bringing a unique blend of technical expertise and creative problem-solving to the table, I'm all about building efficient, accessible, and visually captivating software solutions. As a Frontend Developer, I'm committed to lifelong learning, staying on top of emerging technologies and trends in software development. With an insatiable drive for innovation, I adapt quickly to new tools and techniques, delivering effective solutions that meet the needs of the business.
-            </Typography>
-
-            <Typography variant='h6' sx={{px:8, py:1, textAlign: 'left'}}>
-            Take a moment to browse through my projects and work experience. If you're seeking a passionate, dedicated team member, or interested in collaborating, let's connect!
-            </Typography>
-          </Box>
+        <Typography className='subtitle' sx={{py:1, pb:5}} variant='h5'>
+          Instructional Design & Frontend Technologies
+        </Typography>
+       
+        <Typography className='' sx={{py:2, mx:10, pb:5}} variant='h5'>
+          Blending the realms of education and software development by crafting web learning experiences...
+        </Typography>
 
           
+        <Box className='space'></Box>
 
+        <About />         
 
-      <Tech />
-
+        <Tech />
+        
       </Container>
       
 

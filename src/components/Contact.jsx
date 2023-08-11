@@ -12,14 +12,14 @@ export default function Contact(){
   // add back in later (data-netlify="true")
   return(
     
-    <Container id='contact' className='shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 20}} maxWidth='md'>
+    <Container id='contact' className='shadow' sx={{bgcolor:'#eeeeee', boxShadow: 20}} maxWidth='md'>
         
     <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'} >Want to work together? Contact me!</Typography>
 
       <Container sx={{bgcolor:{color1} }} maxWidth='md'>
         <form name="contact" method="POST" action="/contact">
           <input type="hidden" name="form-name" value="contact" />
-                <Stack spacing={3} direction="row" sx={{mb:4}}>
+                <Stack spacing={3} direction="row" sx={{mb:10}}>
                     <TextField
                         type="text"
                         variant='outlined'

@@ -9,9 +9,11 @@ font-family: 'Roboto', sans-serif;
 } */
 
 /* *{
-  border: 2px solid rgb(209, 13, 13);
+  border: .5px solid rgb(209, 13, 13);
 }  */
-
+.space{
+  height:100px;
+}
 .myfont{
   font-family: 'Roboto', sans-serif;
 }
@@ -20,26 +22,18 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 .main--container{
-  background: linear-gradient(15deg, #f48fb1, #9c27b0, #0288d1 80%);
+  
   background-size: cover;
   height: 100%;
-
-
-
-
-    width:100%;
-    
-    background: rgb(253, 253, 253);
-    background: linear-gradient(
-        135deg,  
-        #9c27b0 0%, 
-        #7753c9 20%,
-        #0288d1 50%,
-        #7753c9 80%,
-        #9c27b0 100%
-    );
-    background-size: 300%;
-    animation: bg-animation 15s infinite alternate;
+  width:100%;
+  background: linear-gradient(
+    170deg, 
+    #9c27b0 0%, #9139b9, #8546c1, #7951c8, #6b5bcd, #5d63d1, #4072d5, #3078d5, #0f83d3,
+    #0288d1 50%, #0f83d3, #207ed5, #3078d5, #4072d5, #4f6bd4, #5d63d1, #6b5bcd, #7951c8, #8546c1, #9139b9,
+    #9c27b0, #a82fae, #b337ad, #be40ab 100%
+  );
+  background-size: 200%;
+  animation: bg-animation 15s infinite alternate;
 }
 
 @keyframes bg-animation {
@@ -56,15 +50,11 @@ font-family: 'Roboto', sans-serif;
   filter: drop-shadow(3px 0px 15px rgba(0, 0, 0, 0.8));
 }
 .logo {
-  height: 8rem;
-  padding: 1rem;
+  height: 7rem;
   transition: all 500ms ease-in-out;
   filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
 }
-.logo:hover {
-  filter: drop-shadow(2px 2px 2px rgba(2, 136, 209, .6));
-  transform: scale(.96); 
-}
+
 .bounce {
   animation: bounce 1.75s 1 ease-in alternate;
   top:50%;
@@ -101,7 +91,9 @@ font-family: 'Roboto', sans-serif;
     100% { left: 0; }
 } */
 .bitmoji{
-  filter: drop-shadow(8px 8px 5px #252525 );
+  filter: drop-shadow(8px 8px 5px #252525);
+  width: 400px;
+  margin-top: 1rem;
 }
 @keyframes fadeInUp {
     from {
@@ -151,11 +143,13 @@ font-family: 'Roboto', sans-serif;
   #16181a, #131416, 
   #0f1112, #0a0c0d, 
   #050607, #000000);
+
 }
 .navlink{
   transition: all 500ms ease-in-out;
   margin-bottom: 4px;
   border-bottom: 2px solid rgba(2, 136, 209, 0);
+  line-height: 25px;
 }
 .navlink:hover{
   filter: drop-shadow(1px 1px 1px rgb(2, 136, 209));
@@ -167,7 +161,9 @@ font-family: 'Roboto', sans-serif;
 .contact--link:hover {
   border-bottom: 2px solid rgb(2, 136, 209);
 }
-
+.hamburger{
+  justify-content: end;
+}
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
@@ -233,7 +229,7 @@ font-family: 'Roboto', sans-serif;
 }
 .medium--logo{
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-  margin: 0 40px;
+  margin: 0 30px;
 }
 
 /*! ------------------ABOUT--------------------- */
@@ -259,7 +255,7 @@ font-family: 'Roboto', sans-serif;
   transition: all 500ms ease-in-out;
 }
 .cards:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .top--layer {

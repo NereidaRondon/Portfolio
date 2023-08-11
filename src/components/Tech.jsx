@@ -55,12 +55,12 @@ export default function Tech() {
   return (
     <React.Fragment>
 
-      <Container className='' maxWidth="lg" sx={{py:7, bgcolor:'#bdbdbd'}} >
+      <Container className='' maxWidth="lg" sx={{py:7, bgcolor:'#eeeeee'}} >
         <Container className='skills--wrapper' maxWidth="lg" sx={{p:1}} 
             data-aos="fade-up"
-            data-aos-offset="200"
-            data-aos-delay="35"
-            data-aos-duration="1000"
+            data-aos-offset="50"
+            data-aos-delay="25"
+            data-aos-duration="750"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
             data-aos-once="false"
@@ -70,7 +70,7 @@ export default function Tech() {
 
           <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', p:3}}>   
                  
-<SkillIcon />
+              <SkillIcon />
 
              <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="70" height="70" alt="JavaScript" /></a></Box>
 
