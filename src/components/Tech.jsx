@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Container, Typography, Box } from '@mui/material';
 
 
-export default function Tech() {
+function Tech(props, refTech){
 
   const skillIconDetails = [
     {
@@ -53,9 +53,8 @@ export default function Tech() {
   }
 
   return (
-    <React.Fragment>
-
-      <Container className='' maxWidth="lg" sx={{py:7, bgcolor:'#eeeeee'}} >
+   
+      <Container className='' ref={refTech} maxWidth="lg" sx={{py:25, bgcolor:'#eeeeee'}} >
         <Container className='skills--wrapper' maxWidth="lg" sx={{p:1}} 
             data-aos="fade-up"
             data-aos-offset="50"
@@ -109,8 +108,8 @@ export default function Tech() {
         </Container>
         
       </Container>
-    </React.Fragment>
+    
 
   );
 }
-
+export default forwardRef(Tech);

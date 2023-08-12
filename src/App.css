@@ -12,7 +12,7 @@ font-family: 'Roboto', sans-serif;
   border: .5px solid rgb(209, 13, 13);
 }  */
 .space{
-  height:100px;
+  height:300px;
 }
 .myfont{
   font-family: 'Roboto', sans-serif;
@@ -20,6 +20,12 @@ font-family: 'Roboto', sans-serif;
 #root {
   margin: 0 auto;
   text-align: center;
+}
+.chevron{
+  filter: drop-shadow(0px 0px 5px #9c27b0);
+}
+.chevron:hover{
+  filter: invert(23%) sepia(46%) saturate(3872%) hue-rotate(276deg) brightness(90%) contrast(98%);
 }
 .main--container{
   
@@ -92,8 +98,8 @@ font-family: 'Roboto', sans-serif;
 } */
 .bitmoji{
   filter: drop-shadow(8px 8px 5px #252525);
-  width: 400px;
-  margin-top: 1rem;
+  width: 350px;
+  
 }
 @keyframes fadeInUp {
     from {
@@ -136,6 +142,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 /*!---------------------NAV BAR-------------------- */
+.header{
+  height: 150px;
+}
 .navbar--comp{
   background: radial-gradient(circle at 50% 50%, 
   #212529, #1e2225, 
@@ -189,6 +198,10 @@ font-family: 'Roboto', sans-serif;
   .bitmoji{
     width: 80%;
   }
+}
+/*! ----------------- INTRO -------------------  */
+.section{
+  height: 100dvh;
 }
 /*! ---------------- TECH SKILLS---------------- */
 .skills--wrapper{
@@ -275,20 +288,6 @@ font-family: 'Roboto', sans-serif;
   
 }
 
-
-@media screen and (max-width: 1000px){
-  .tech{
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .7));
-    width: 750px;
-  }
-} 
-
-@media screen and (max-width: 800px){
-  .tech{
-    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .7));
-    width: 600px;
-  }
-} 
 @media screen and (max-width: 700px){
   .course--frame{
     height: 340px;
@@ -296,10 +295,7 @@ font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
   }
-  .tech{
-    width: 480px;
-    padding: 1rem 0;
-  }
+
   .title{
     filter: drop-shadow(1px 1px .25px black);
   }
@@ -314,10 +310,7 @@ font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
   }
-  .tech{
-    width: 300px;
-    padding: 1rem 0;
-  }
+
 }
 @media screen and (max-width: 400px){
   .course--frame{
@@ -325,9 +318,6 @@ font-family: 'Roboto', sans-serif;
     width: 90%;
     margin:0;
     padding:0;
-  }
-  .tech{
-    width: 250px;
   }
 
 } 
@@ -338,11 +328,7 @@ font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
   }
-  .tech{
-    width: 250px;
-  }
-
-  .cards{
+   .cards{
     height: 100px;
     
   }

@@ -11,7 +11,7 @@ export default function NavBar() {
   return (
     
 
-    <Navbar className='m-0 p-0 sticky-top' expand="md" collapseOnSelect variant="dark" sticky="top">
+    <Navbar className='m-0 p-0 sticky-top header' expand="md" collapseOnSelect variant="dark" sticky="top">
       <Container className='navbar--comp shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 0}} maxWidth='md'> 
       
         <LinkContainer to="/"> 
@@ -35,8 +35,8 @@ export default function NavBar() {
                 <Nav.Link  className='pt-1 ps-4 pe-4 navlink projects--link' >Projects</Nav.Link>
               </LinkContainer> 
 
-              <LinkContainer to="/media">
-                <Nav.Link className='pt-1 ps-4 pe-4 navlink media--link' >Media</Nav.Link>
+              <LinkContainer to="/videos">
+                <Nav.Link className='pt-1 ps-4 pe-4 navlink media--link' >Videos</Nav.Link>
               </LinkContainer>  
 
               <LinkContainer to="/contact">

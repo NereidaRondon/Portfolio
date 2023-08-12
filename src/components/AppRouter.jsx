@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './Home';
 import Error from './Error';
 import Projects from './Projects';
-import Media from './Media';
+import Videos from './Videos';
 import Contact from './Contact';
 
 export default function AppRouter() {
@@ -15,7 +15,7 @@ export default function AppRouter() {
 
       <Route path="/projects" element={<Projects />} />
 
-      <Route path="/media" element={<Media />} />
+      <Route path="/videos" element={<Videos />} />
 
       <Route path="/contact" element={<Contact />} />
 

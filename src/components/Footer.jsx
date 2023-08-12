@@ -22,9 +22,21 @@ export default function SocialIcons() {
     
         <Link to='https://www.linkedin.com/in/nereidarondon/' target='_blank'><LinkedInIcon sx={{ fontSize: 50, mx: 4 }} color="info"/></Link>
         
-        <Link to='https://github.com/NereidaRondon' target='_blank'><GitHubIcon sx={{ fontSize: 50, mx: 4, color: pink[200] }} /></Link>
+        <Link to='https://github.com/NereidaRondon' target='_blank'><GitHubIcon sx={{ fontSize: 50, mx: 4, color: pink[200] }} className=''  
+          data-aos="flip-down"
+        /></Link>
 
-        <Link to='https://medium.com/@nereidarondon' target='_blank'><img className='medium--logo animate__animated animate__tada animate__slower animate__delay-2s animate__repeat-2' src={medium} width='50' /></Link>
+        <Link to='https://medium.com/@nereidarondon' target='_blank'
+        ><img className='' src={medium} width='50' 
+          data-aos="flip-down"
+          data-aos-offset="0"
+          data-aos-delay="1"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="bottom-center"
+        /></Link>
 
       </Box>
 
