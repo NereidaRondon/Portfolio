@@ -54,7 +54,7 @@ function Tech(props, refTech){
 
   return (
    
-      <Container className='' ref={refTech} maxWidth="lg" sx={{pt:15, pb:10, bgcolor:'#eeeeee'}} >
+      <Container className='' ref={refTech} maxWidth="lg" sx={{pt:15, pb:10}} >
         <Container className='skills--wrapper' maxWidth="lg" sx={{p:1}} 
             data-aos="fade-up"
             data-aos-offset="50"

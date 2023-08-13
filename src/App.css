@@ -17,28 +17,26 @@ font-family: 'Shadows Into Light Two', cursive;
   height:300px;
 }
 body{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:'Poppins', sans-serif;
 }
 #root {
   margin: 0 auto;
   text-align: center;
+  color: rgb(250, 250, 250);
+  font-family:'Poppins', sans-serif;
 }
 .chevron{
-  filter: drop-shadow(0px 0px 5px #9c27b0);
+  filter: invert(94%) sepia(94%) saturate(24%) hue-rotate(55deg) brightness(106%) contrast(105%);
 }
 .chevron:hover{
-  filter: invert(23%) sepia(46%) saturate(3872%) hue-rotate(276deg) brightness(90%) contrast(98%);
-}
+  filter: invert(27%) sepia(95%) saturate(2828%) hue-rotate(205deg) brightness(103%) contrast(108%);
+}  
 .main--container{
-  
   background-size: cover;
-  height: 100%;
   width:100%;
   background: linear-gradient(
     170deg, 
-    #9c27b0 0%, #9139b9, #8546c1, #7951c8, #6b5bcd, #5d63d1, #4072d5, #3078d5, #0f83d3,
-    #0288d1 50%, #0f83d3, #207ed5, #3078d5, #4072d5, #4f6bd4, #5d63d1, #6b5bcd, #7951c8, #8546c1, #9139b9,
-    #9c27b0, #a82fae, #b337ad, #be40ab 100%
+    #22043d 0%, #0b438b 50%, #0854b8 100%
   );
   background-size: 200%;
   animation: bg-animation 15s infinite alternate;
@@ -56,6 +54,7 @@ body{
 
 .shadow{
   filter: drop-shadow(3px 0px 15px rgba(0, 0, 0, 0.8));
+  border-radius: 20px;
 }
 .logo {
   height: 7rem;
@@ -99,7 +98,7 @@ body{
     100% { left: 0; }
 } */
 .bitmoji{
-  filter: drop-shadow(8px 8px 5px #252525);
+  filter: drop-shadow(8px 8px 5px #080418);
   width: 350px;
   
 }
@@ -142,34 +141,29 @@ body{
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
-
+.medium
 /*!---------------------NAV BAR-------------------- */
 .header{
   height: 150px;
 }
-.navbar--comp{
+.navbar--container{
   background: radial-gradient(circle at 50% 50%, 
   #212529, #1e2225, 
   #1b1e21, #191b1e, 
   #16181a, #131416, 
   #0f1112, #0a0c0d, 
   #050607, #000000);
- 
+ border-radius: 30px;
 }
-.navlink{
-  transition: all 500ms ease-in-out;
+.menu--link{
+  transition: all 300ms ease-in-out;
   margin-bottom: 4px;
   border-bottom: 2px solid rgba(2, 136, 209, 0);
   line-height: 25px;
 }
-.navlink:hover{
-  filter: drop-shadow(1px 1px 1px rgb(2, 136, 209));
 
-}
-.home--link:hover,
-.projects--link:hover,
-.media--link:hover,
-.contact--link:hover {
+.menu--link:hover {
+  filter: drop-shadow(1px 1px 1px rgb(2, 136, 209));
   border-bottom: 2px solid rgb(2, 136, 209);
 }
 .hamburger{
@@ -178,20 +172,28 @@ body{
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
-  background: -webkit-linear-gradient(rgb(4, 25, 97), rgb(178, 39, 233));
+  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1.5px 2px .25px black);
+  filter: drop-shadow(1.5px 2px 1px black);
+}
+.title2{
+  text-align: center;
+  background: -webkit-linear-gradient(rgb(3, 104, 255), rgb(255, 0, 242));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(1.5px 2px 1px black);
 }
 .subtitle{
-  background: -webkit-linear-gradient(rgb(4, 16, 58), rgb(161, 4, 192));
+  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(.75px .75px .10px black);
+  filter: drop-shadow(.75px .75px 1px black);
+  font-family: 'Poppins', sans-serif;
 }
 .title-dark-bg{
   filter: drop-shadow(.75px .75px 1px black);
-  background: -webkit-linear-gradient(rgb(2, 136, 209), rgb(222, 83, 250));
+  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -239,18 +241,53 @@ section {
 }
 /*! ----------------- FOOTER ------------------- */
 .footer{
+  
+}
+/*! ------------------ ICONS ------------------- */
+.medium{
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); 
+  margin: 22px 0;
+  transition: all 200ms ease-in-out;
+}
+.medium:hover{
+  transform: scale(1.1);
+}
+.logo-div{
+  position: fixed;
+  width: 150px;
+  height:150px;
+  align-content: center;
+  top: 0px;
+  left: 0px;
+  z-index: 2001;
+}
+.icon-div{
   background: radial-gradient(circle at 50% 50%, 
   #212529, #1e2225, 
   #1b1e21, #191b1e, 
   #16181a, #131416, 
   #0f1112, #0a0c0d, 
   #050607, #000000);
+  position: fixed;
+  width: 150px;
+  height:100dvh;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  flex-direction: column;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
 }
-.medium--logo{
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-  margin: 0 30px;
+.icon{
+  transition: all 200ms ease-in-out;
+  z-index: 105;
+  filter: drop-shadow(1px 1px 4px black);
+  margin: 20px 0; 
 }
-
+.icon:hover{
+  transform: scale(1.15);
+}
 /*! ------------------ABOUT--------------------- */
 .about{
     background: linear-gradient(150deg,   
@@ -265,6 +302,9 @@ section {
 }
 .tech{
   filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, .7));
+}
+.resume--btn:hover{
+  color: white;
 }
 /*! ------------------PROJECTS--------------------- */
 .projects--container{
@@ -293,7 +333,34 @@ section {
   opacity: 1;
   
 }
-
+@media screen and (max-width: 1000px){
+  .icon-div{
+    border-radius: 100px;
+    position: fixed;
+    margin: 15px;
+    width: 350px;
+    height:70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: row;
+    top: 90%;
+    left: 3%;
+    z-index: 100;
+  }
+  .icon{
+    filter: drop-shadow(0px 0px 1px black);
+    margin:0;
+  }
+  .logo {
+    height: 2.5rem;
+    transition: all 500ms ease-in-out;
+    filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
+  }
+  .medium{
+    margin:0;
+  }
+}
 @media screen and (max-width: 700px){
   .course--frame{
     height: 340px;
@@ -357,6 +424,8 @@ section {
     height: 135px;
   }
 }
+/*! ------------- CONTACT --------------------------- */
+
 /*! -----------ERROR 404 PAGE------------------------ */
 @media screen and (max-width: 500px){
   .error{

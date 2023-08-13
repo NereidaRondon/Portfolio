@@ -1,12 +1,11 @@
 import React, { forwardRef } from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import { Link } from "react-router-dom";
 
 function About(props, refAbout){
       return(
         
-        <Container ref={refAbout} sx={{bgcolor:'#eeeeee', mt:1, pt:20}} maxWidth="md">
+        <Container ref={refAbout} sx={{mt:1, pt:20}} maxWidth="md">
           <Box className=''
             data-aos="fade-up"
             data-aos-offset="20"
@@ -19,25 +18,26 @@ function About(props, refAbout){
 
             <Typography className='title' sx={{pt:2, pb:2}} bgcolor='dark' variant='h3' fontFamily={'Shadows Into Light Two'}>About Me</Typography>
 
-            <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}}>
+            <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}} fontFamily={'Poppins'}>
 
               My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm eager to learn and dedicated to staying current with emerging technologies.
             </Typography>
 
-            <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}}>
+            <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}} fontFamily={'Poppins'}>
             Explore my projects and experience. Whether you're seeking a dedicated team member or looking to collaborate, I'm just a message away. Let's connect!
             </Typography>
           </Box>
 
           
-            <Button sx={{my:6, px:5, fontSize:'1.25rem',}} 
-                variant="contained"  
+            <Button sx={{my:6, px:5, fontSize:'1.25rem'}} fontFamily={'Poppins'}
+                className='resume--btn' 
+                variant='contained'  
                 endIcon={<PictureAsPdfIcon />} 
-                size="large" 
-                color="secondary" 
+                size='large' 
+                color='secondary' 
                 elevation='5' 
                 href='/resume'
-                target = "_blank"
+                target = '_blank'
             >Resume
             </Button>
       

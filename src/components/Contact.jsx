@@ -9,14 +9,14 @@ export default function Contact(){
 
   return(
     
-    <Container id='contact' className='shadow' sx={{bgcolor:'#eeeeee', boxShadow: 20}} maxWidth='md'>
+    <Container id='contact' className='shadow' sx={{backgroundColor:'#dfe6f0', boxShadow: 20, my:6}} maxWidth='md'>
         
-    <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Want to work together? Contact me!</Typography>
+    <Typography className='title2' sx={{py:4}} variant='h3' fontFamily={'Shadows Into Light Two'}>Want to work together? Contact me!</Typography>
 
-      <Container sx={{bgcolor:{color1} }} maxWidth='md'>
+      <Container sx={{bgcolor:{color1}, pt:4 }} maxWidth='md'>
         <form name="contact" method="POST" action="/contact">
           <input type="hidden" name="form-name" value="contact" />
-          <Stack spacing={3} direction="row" sx={{mb:4}}>
+          <Stack spacing={3} direction="row" sx={{mb:4}} className='form--bg'>
               <TextField
                 type="text"
                 variant='outlined'
@@ -60,7 +60,7 @@ export default function Contact(){
             sx={{fontSize:'1.25rem', pb:1}}
           />
 
-          <Button sx={{my:3, px:4, fontSize:'1.25rem',}} 
+          <Button sx={{my:6, px:4, fontSize:'1.25rem',}} 
                   variant="contained"  
                   endIcon={<SendIcon />} 
                   size="large" 

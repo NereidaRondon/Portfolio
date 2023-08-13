@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import AppRouter from './components/AppRouter';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Socials from './components/Socials';
 
 export default function App() {
 
@@ -15,7 +16,8 @@ export default function App() {
     <React.Fragment>
       <CssBaseline />
         <Container className='main--container' maxWidth="xxl">
-
+          
+          <Socials />
           <NavBar />
           <ScrollToTop />
           <AppRouter />

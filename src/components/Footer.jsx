@@ -1,46 +1,14 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Box from '@mui/material/Box';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import medium from '../assets/medium.svg';
-import { pink } from '@mui/material/colors';
 import { Container, Typography } from '@mui/material';
-
 
 export default function SocialIcons() {
   const date = new Date();
   const year = date.getFullYear();
   
   return (
-    <Container className='footer shadow' maxWidth='md' sx={{ boxShadow: 20}}>
+    <Container className='footer' maxWidth='md' sx={{ }}>
 
-      <Box className='' sx={{ py: 2}}>
-        
-        <Link to='mailto: nereida.rondon5@gmail.com' target='_blank'><AlternateEmailIcon sx={{ fontSize: 50, mx: 4 }} color="secondary"/></Link>
-    
-        <Link to='https://www.linkedin.com/in/nereidarondon/' target='_blank'><LinkedInIcon sx={{ fontSize: 50, mx: 4 }} color="info"/></Link>
-        
-        <Link to='https://github.com/NereidaRondon' target='_blank'><GitHubIcon sx={{ fontSize: 50, mx: 4, color: pink[200] }} className=''  
-          data-aos="flip-down"
-        /></Link>
-
-        <Link to='https://medium.com/@nereidarondon' target='_blank'
-        ><img className='' src={medium} width='50' 
-          data-aos="flip-down"
-          data-aos-offset="0"
-          data-aos-delay="1"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-anchor-placement="bottom-center"
-        /></Link>
-
-      </Box>
-
-      <Typography sx={{ pb:4, color:'primary.main'}}>
+      <Typography sx={{ py:6}}>
         Website coded by Nereida Rondon ©️{year}
       </Typography>
 

@@ -7,10 +7,13 @@ import { Box, Container } from '@mui/material';
 import Image from 'react-bootstrap/Image';
 
 export default function Home(){
-  
+  const refIntro = useRef(null);
   const refAbout = useRef(null);
   const refTech = useRef(null);
 
+  const handleIntroScroll = () => {
+    refIntro.current?.scrollIntoView({ behavior: 'smooth', block: "start"});
+  }
   const handleAboutScroll = () => {
     refAbout.current?.scrollIntoView({ behavior: 'smooth', block: "start"});
   }
@@ -20,22 +23,28 @@ export default function Home(){
 
   return(
     <>
-      <Container id='home' className='shadow' sx={{bgcolor:'#eeeeee', boxShadow: 20}} maxWidth="md">
+      <Container id='home' className='' sx={{}} maxWidth="md">
           
-          <Box className='section' sx={{my:0, py:0}}>
-            <Intro />
+          <Box className='section' sx={{my:0, py:3}}>
+            
+            <Intro ref={refIntro}/>
 
             <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slower	animate__infinite' src={chevron} alt="scroll down" width='50'/>
+          
           </Box>
 
           <Box className='section'>
+
             <About ref={refAbout}/>         
 
             <Image aria-roledescription='button' onClick={handleTechScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slower	animate__infinite' src={chevron} alt="scroll down" width='50'/>
           </Box>
 
+          <Box className='section'>
 
             <Tech ref={refTech} />
+
+          </Box>
         
       </Container>
       

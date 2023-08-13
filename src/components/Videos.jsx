@@ -18,7 +18,7 @@ export default function Media() {
 
   return (
 
-    <Container className='media--container shadow' sx={{bgcolor:'#eeeeee', pb:10, boxShadow:20}} maxWidth='md'> 
+    <Container className='media--container' sx={{pb:10}} maxWidth='md'> 
       
       <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Videos</Typography>
 
@@ -39,9 +39,9 @@ export default function Media() {
             <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/wA9rmMTNssA" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </Grid>
       
-          {/* <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6}>
             <iframe className='video' width="560" height="315" src="https://www.youtube.com/embed/yKwq6Ai6skI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-          </Grid> */}
+          </Grid>
           
         </Grid>
       </Box>
