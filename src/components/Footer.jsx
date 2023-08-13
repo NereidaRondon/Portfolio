@@ -6,9 +6,9 @@ export default function SocialIcons() {
   const year = date.getFullYear();
   
   return (
-    <Container className='footer' maxWidth='md' sx={{ }}>
+    <Container className='footer' maxWidth='md' sx={{pt:10}}>
 
-      <Typography sx={{ py:6}}>
+      <Typography sx={{pb:1}}>
         Website coded by Nereida Rondon ©️{year}
       </Typography>
 

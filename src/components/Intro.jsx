@@ -24,11 +24,11 @@ function Intro(props, refAbout){
         
         <Typography className='title' sx={{pt:2,}} bgcolor='dark' variant='h2' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
-        <Typography className='subtitle' sx={{py:1, pb:5}} variant='h4'>
+        <Typography className='subtitle' sx={{pt:1, pb:5}} fontFamily={'Poppins'} variant='h4'>
           Instructional Design & Frontend Development
         </Typography>
         
-        <Typography className='' sx={{py:2, mx:4, pb:5}} fontFamily={'Poppins'} variant='h5'>
+        <Typography className='' sx={{py:2, mx:2, pb:5}} fontFamily={'Poppins'} variant='h5'>
           Blending the realms of education and software development by crafting web learning experiences...
         </Typography>
     
