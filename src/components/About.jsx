@@ -29,19 +29,18 @@ function About(props, refAbout){
             </Typography>
           </Box>
 
-          <Link to='/resume' target='_blank'>
+          
             <Button sx={{my:6, px:5, fontSize:'1.25rem',}} 
-                variant="outlined"  
+                variant="contained"  
                 endIcon={<PictureAsPdfIcon />} 
                 size="large" 
                 color="secondary" 
                 elevation='5' 
                 href='/resume'
                 target = "_blank"
-                class='resume-btn'
-                >Resume
+            >Resume
             </Button>
-          </Link>
+      
 
         </Container>
       );
