@@ -3,7 +3,7 @@ import Intro from './Intro';
 import About from './About';
 import Tech from './Tech';
 import chevron from '../assets/chevron-down-solid.svg';
-import { Box, Container, Typography, Paper, styled } from '@mui/material';
+import { Box, Container } from '@mui/material';
 import Image from 'react-bootstrap/Image';
 
 export default function Home(){
@@ -22,7 +22,7 @@ export default function Home(){
     <>
       <Container id='home' className='shadow' sx={{bgcolor:'#eeeeee', boxShadow: 20}} maxWidth="md">
           
-          <Box className='section'>
+          <Box className='section' sx={{my:0, py:0}}>
             <Intro />
 
             <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slower	animate__infinite' src={chevron} alt="scroll down" width='50'/>

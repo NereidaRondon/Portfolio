@@ -12,19 +12,19 @@ export default function NavBar() {
     
 
     <Navbar className='m-0 p-0 sticky-top header' expand="md" collapseOnSelect variant="dark" sticky="top">
-      <Container className='navbar--comp shadow' sx={{bgcolor:'#bdbdbd', boxShadow: 0}} maxWidth='md'> 
+      <Container className='navbar--comp shadow ' sx={{bgcolor:'#bdbdbd', boxShadow: 0}} maxWidth='md'> 
       
         <LinkContainer to="/"> 
-          <Navbar.Brand href='#home' className='logo m-0 p-0'>
+          <Navbar.Brand href='#home' className='logo m-0 p-0 justify-content-start'>
             <img src={logo} className='logo m-0 p-0 bounce' alt='' />
           </Navbar.Brand>
          </LinkContainer>
         
-        <Typography variant='h5' fontFamily={'Shadows Into Light Two'}>
         
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className='hamburger justify-content-end'/>
           <Navbar.Collapse id="responsive-navbar-nav hamburger" className=''>
 
+        <Typography variant='h5' className="m-auto " fontFamily={'Shadows Into Light Two'}>
             <Nav className="m-auto justify-content-center">
               
               <LinkContainer to="/">
@@ -45,8 +45,8 @@ export default function NavBar() {
 
             </Nav>
 
-          </Navbar.Collapse>
         </Typography>
+          </Navbar.Collapse>
       </Container>
     </Navbar>
   

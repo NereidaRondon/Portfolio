@@ -5,6 +5,7 @@ import Error from './Error';
 import Projects from './Projects';
 import Videos from './Videos';
 import Contact from './Contact';
+import Resume from './Resume';
 
 export default function AppRouter() {
 
@@ -19,6 +20,8 @@ export default function AppRouter() {
 
       <Route path="/contact" element={<Contact />} />
 
+      <Route path="/resume" element={<Resume />} />
+      
       <Route path="*" element={<Error />} />
 
     </Routes>

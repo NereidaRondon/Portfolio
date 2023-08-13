@@ -1,12 +1,12 @@
 import React, { forwardRef } from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import resume from '../assets/Resume.pdf';
+import { Link } from "react-router-dom";
 
 function About(props, refAbout){
       return(
         
-        <Container ref={refAbout} sx={{bgcolor:'#eeeeee', mt:1, pt:25}} maxWidth="md">
+        <Container ref={refAbout} sx={{bgcolor:'#eeeeee', mt:1, pt:20}} maxWidth="md">
           <Box className=''
             data-aos="fade-up"
             data-aos-offset="20"
@@ -21,7 +21,7 @@ function About(props, refAbout){
 
             <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}}>
 
-              My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm look forward to learning new and emerging technologies.
+              My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm eager to learn and dedicated to staying current with emerging technologies.
             </Typography>
 
             <Typography variant='h6' sx={{px:4, py:1, textAlign: 'left'}}>
@@ -29,16 +29,19 @@ function About(props, refAbout){
             </Typography>
           </Box>
 
-          <Button sx={{my:4, px:5, fontSize:'1.25rem',}} 
-              variant="outlined"  
-              endIcon={<PictureAsPdfIcon />} 
-              size="large" 
-              color="secondary" 
-              elevation='5' 
-              href={resume}
-              target = "_blank"
-              >Resume
-          </Button>
+          <Link to='/resume' target='_blank'>
+            <Button sx={{my:6, px:5, fontSize:'1.25rem',}} 
+                variant="outlined"  
+                endIcon={<PictureAsPdfIcon />} 
+                size="large" 
+                color="secondary" 
+                elevation='5' 
+                href='/resume'
+                target = "_blank"
+                class='resume-btn'
+                >Resume
+            </Button>
+          </Link>
 
         </Container>
       );

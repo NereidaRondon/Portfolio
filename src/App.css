@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Shadows+Into+Light+Two&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Shadows+Into+Light+Two&display=swap');
+
+
 /* 
-font-family: 'Shadows Into Light', cursive;
-font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Shadows Into Light Two', cursive;
 */
  /* :root {
    --animate-duration: 2s; 
@@ -14,8 +16,8 @@ font-family: 'Roboto', sans-serif;
 .space{
   height:300px;
 }
-.myfont{
-  font-family: 'Roboto', sans-serif;
+body{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 #root {
   margin: 0 auto;
@@ -152,7 +154,7 @@ font-family: 'Roboto', sans-serif;
   #16181a, #131416, 
   #0f1112, #0a0c0d, 
   #050607, #000000);
-
+ 
 }
 .navlink{
   transition: all 500ms ease-in-out;
@@ -198,9 +200,16 @@ font-family: 'Roboto', sans-serif;
   .bitmoji{
     width: 80%;
   }
+
+
+
+}
+.resume-btn:hover{
+  color:white !important;
+
 }
 /*! ----------------- INTRO -------------------  */
-.section{
+section {
   height: 100dvh;
 }
 /*! ---------------- TECH SKILLS---------------- */
