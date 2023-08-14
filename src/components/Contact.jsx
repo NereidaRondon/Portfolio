@@ -9,7 +9,7 @@ export default function Contact(){
 
   return(
     
-    <Container id='contact' className='shadow' sx={{backgroundColor:'#dfe6f0', boxShadow: 20, my:6}} maxWidth='md'>
+    <Container id='contact' className='shadow' sx={{backgroundColor:'#c7c7c7', boxShadow: 20, my:6}} maxWidth='md'>
         
     <Typography className='title2' sx={{py:4}} variant='h3' fontFamily={'Shadows Into Light Two'}>Want to work together? Contact me!</Typography>
 

@@ -33,12 +33,13 @@ body{
   filter: invert(27%) sepia(95%) saturate(2828%) hue-rotate(205deg) brightness(103%) contrast(108%);
 }  
 .main--container{
+  background: linear-gradient(135deg, #11012b, #11012d, #120134, #12023f, #10024b, #0c0359, #050468, #050d76, #061982, #07238d, #082b94, #082e96);
   background-size: cover;
   width:100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     125deg, 
-    #22043d 0%, #290366 40%, #0a38b8 75%, #0854b8 100%
-  );
+    #20023a 0%, #2a0269 40%, #0a38b8 75%, #0854b8 100%
+  ); */
   background-size: 200%;
   animation: bg-animation 15s infinite alternate;
 }
@@ -173,10 +174,10 @@ body{
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
-  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
+  background: -webkit-linear-gradient(rgb(78, 186, 248), rgb(238, 152, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(1.5px 2px 1px black);
+  filter: drop-shadow(2px 2px 2px black);
 }
 .title2{
   text-align: center;
@@ -186,10 +187,10 @@ body{
   filter: drop-shadow(1.5px 2px 1px black);
 }
 .subtitle{
-  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
+  background: -webkit-linear-gradient(rgb(78, 186, 248), rgb(238, 152, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(.75px .75px 1px black);
+  filter: drop-shadow(1px 1px 1px black);
   font-family: 'Poppins', sans-serif;
 }
 .title-dark-bg{
@@ -308,11 +309,17 @@ section {
   color: white;
 }
 /*! ------------------PROJECTS--------------------- */
-.projects--container{
-  background-color: none; 
-}
-.cards{
+
+.project--img{
   transition: all 500ms ease-in-out;
+  margin: 0 auto;
+}
+.project--img:hover{
+ transform: scale(1.05);
+}
+
+.card--style{
+  background: #000000;
 }
 .cards:hover{
   transform: scale(1.05);

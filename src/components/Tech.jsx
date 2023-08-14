@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import { Container, Typography, Box } from '@mui/material';
-
+import router from '../assets/react-router.svg';
 
 function Tech(props, refTech){
 
@@ -65,7 +65,7 @@ function Tech(props, refTech){
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
 
-          <Typography className='title title-dark-bg' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
+          <Typography className='title2 ' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
 
           <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', py:4}}>   
                  
@@ -81,27 +81,37 @@ function Tech(props, refTech){
 
             <Box className='skill' sx={{m:2 }}><a  href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="60" height="60" alt="Bootstrap" /></a></Box>
 
+            <Box className='skill' sx={{m:2 }}><a  href="https://jquery.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" width="60" height="60" alt="JQuery" /></a></Box>
+
             <Box className='skill' sx={{m:2 }}><a  href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="60" height="60" alt="React" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://vitejs.dev/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/vite-colored.svg" width="60" height="60" alt="Vite" /></a></Box>
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://jquery.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" width="60" height="60" alt="JQuery" /></a></Box>
+
+
+            <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://create-react-app.dev/img/logo.svg" width="60" height="60" alt="Create React App" /></a></Box>
+
+            <Box className='skill' sx={{m:2 }}><a  href="https://react-bootstrap.github.io/" target="_blank" rel="noreferrer"><img src="https://react-bootstrap.github.io/img/logo.svg" width="60" height="60" alt="React-Bootstrap" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://mui.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" width="60" height="60" alt="Material UI" /></a></Box>
+
 
             {/* <Box className='skill' sx={{m:2 }}><a  href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" width="60" height="60" alt="Webpack" /></a></Box> */}
 
             {/* <Box className='skill' sx={{m:2 }}><a  href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="60" height="60" alt="NodeJS" /></a></Box> */}
 
-             <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="60" height="60" alt="MySQL" /></a></Box>
-
-            <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="60" height="60" alt="Firebase" /></a></Box>
+            {/* <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg" width="60" height="60" alt="Firebase" /></a></Box> */}
             
+
             <Box className='skill' sx={{m:2 }}><a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="60" height="60" alt="Figma" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="60" height="60" alt="Photoshop" /></a></Box>
  
             <Box className='skill' sx={{m:2 }}><a  href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="60" height="60" alt="Illustrator" /></a></Box>
+
+            <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="60" height="60" alt="MySQL" /></a></Box>
+
+            <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://axios-http.com/assets/logo.svg" width="120" height="50" alt="Firebase" /></a></Box>
 
           </Container>
 
@@ -109,7 +119,7 @@ function Tech(props, refTech){
         
       </Container>
     
-
-  );
-}
+    
+    );
+  }
 export default forwardRef(Tech);

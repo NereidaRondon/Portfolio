@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Typography, CardActionArea, Card, CardMedia, Paper, Box,  } from '@mui/material';
 import { experimentalStyled as styled } from '@mui/material/styles';
 import Grid from '@mui/material/Unstable_Grid2';
-import addiegraphic from '../assets/addiegraphic.svg';
-import blooms from '../assets/blooms.svg';
+
 
 export default function Media() {
 
