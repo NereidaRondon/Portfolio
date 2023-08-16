@@ -32,27 +32,6 @@ body{
 .chevron:hover{
   filter: invert(27%) sepia(95%) saturate(2828%) hue-rotate(205deg) brightness(103%) contrast(108%);
 }  
-.main--container{
-  background: linear-gradient(135deg, #11012b, #11012d, #120134, #12023f, #10024b, #0c0359, #050468, #050d76, #061982, #07238d, #082b94, #082e96);
-  background-size: cover;
-  width:100%;
-  /* background: linear-gradient(
-    125deg, 
-    #20023a 0%, #2a0269 40%, #0a38b8 75%, #0854b8 100%
-  ); */
-  background-size: 200%;
-  animation: bg-animation 15s infinite alternate;
-}
-
-@keyframes bg-animation {
-    0%{
-        background-position: left;
-    }
-    100%{
-        background-position: right;
-    }
-}
-
 
 .shadow{
   filter: drop-shadow(3px 0px 15px rgba(0, 0, 0, 0.8));
