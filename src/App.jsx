@@ -1,6 +1,4 @@
-import React, { useState, useMemo } from 'react';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import React from 'react';
 import { Container } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
@@ -11,7 +9,13 @@ import ScrollToTop from './components/ScrollToTop';
 import Socials from './components/Socials';
 
 export default function App() {
+  
+  // look in elements in dev tools for an attribute called data-scroll = "position from top" on body tag
+  document.addEventListener('scroll', () => {
+    document.documentElement.dataset.scroll = window.scrollY;
+  });
 
+  
   return (
     <React.Fragment>
       <CssBaseline />

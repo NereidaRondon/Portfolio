@@ -147,13 +147,14 @@ body{
   filter: drop-shadow(1px 1px 1px rgb(2, 136, 209));
   border-bottom: 2px solid rgb(2, 136, 209);
 }
-.hamburger{
-  justify-content: end;
+button.hamburger{
+  background: -webkit-linear-gradient(45deg, rgb(12, 109, 255), rgb(153, 58, 172));
+  border: none;
 }
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
-  background: -webkit-linear-gradient(rgb(78, 186, 248), rgb(238, 152, 255));
+  background: -webkit-linear-gradient(rgb(233, 207, 255), rgb(119, 205, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 2px 2px black);
@@ -292,6 +293,8 @@ section {
 .project--img{
   transition: all 500ms ease-in-out;
   margin: 0 auto;
+  filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, .5));
+
 }
 .project--img:hover{
  transform: scale(1.05);
@@ -304,6 +307,17 @@ section {
   transform: scale(1.05);
 }
 
+/* .other--projects{
+  background: linear-gradient(180deg, #b399ff, #ad9bff, #a79dff, #a29eff, #a0a4ff, #a2acff, #a4b5ff, #a6bdff, #a8c4ff, #a9ccff, #abd3ff, #addaff);
+  transition: all 500ms ease-in-out;
+} */
+.other--projects{
+  transition: 500ms ease-in-out;
+} 
+.other--projects:hover{
+  background:  #abd3ff;
+  background: #ffffff;
+}
 .top--layer {
   transition: .5s ease;
   opacity: 0;
