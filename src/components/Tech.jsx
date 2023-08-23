@@ -4,21 +4,6 @@ import router from '../assets/react-router.svg';
 
 function Tech(props, refTech){
 
-  function SkillIcon(){
-
-    return(
-
-      skillIconDetails.map((item, index)=>{
-        
-        <Box key={index} className='skill' sx={{m:2 }}>
-          <a  href={item.link} target="_blank" rel="noreferrer">
-            <img src={item.image} width="60" height="60" alt={item.alt} /></a>
-        </Box>
-        
-      })
-    );
-  }
-
   return (
    
       <Container className='' ref={refTech} maxWidth="lg" sx={{pt:15, pb:10}} >
@@ -36,7 +21,6 @@ function Tech(props, refTech){
 
           <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', py:4}}>   
                  
-              <SkillIcon />
 
              <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="60" height="60" alt="JavaScript" /></a></Box>
 
