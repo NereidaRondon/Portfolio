@@ -4,39 +4,6 @@ import router from '../assets/react-router.svg';
 
 function Tech(props, refTech){
 
-  const skillIconDetails = [
-    {
-      link:'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-      image:'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg',
-      alt:'JavaScript'
-    },
-    {
-      link:'https://git-scm.com/',
-      image:'https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/git-colored.svg',
-      alt:'Git'
-    },
-    // {
-    //   link:,
-    //   image:,
-    //   alt:
-    // },
-    // {
-    //   link:,
-    //   image:,
-    //   alt:
-    // },
-    // {
-    //   link:,
-    //   image:,
-    //   alt:
-    // },
-    // {
-    //   link:,
-    //   image:,
-    //   alt:
-    // }
-  ];
-
   function SkillIcon(){
 
     return(
@@ -105,9 +72,9 @@ function Tech(props, refTech){
 
             <Box className='skill' sx={{m:2 }}><a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="60" height="60" alt="Figma" /></a></Box>
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="60" height="60" alt="Photoshop" /></a></Box>
+            <Box className='skill' sx={{m:2 }}><a  href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="60" height="60" alt="Photoshop" /></a></Box>
  
-            <Box className='skill' sx={{m:2 }}><a  href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="60" height="60" alt="Illustrator" /></a></Box>
+            <Box className='skill' sx={{m:2 }}><a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="60" height="60" alt="Illustrator" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="60" height="60" alt="MySQL" /></a></Box>
 
@@ -119,7 +86,6 @@ function Tech(props, refTech){
         
       </Container>
     
-    
     );
-  }
+}
 export default forwardRef(Tech);
