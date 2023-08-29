@@ -10,9 +10,9 @@ font-family: 'Shadows Into Light Two', cursive;
   --animate-delay: 5s;
 } */
 
-/* *{
+*{
   border: .5px solid rgb(209, 13, 13);
-}  */
+} 
 .space{
   height:200px;
 }
@@ -36,11 +36,6 @@ body{
 .shadow{
   filter: drop-shadow(3px 0px 15px rgba(0, 0, 0, 0.8));
   border-radius: 20px;
-}
-.logo {
-  height: 7rem;
-  transition: all 500ms ease-in-out;
-  filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
 }
 
 .bounce {
@@ -122,10 +117,10 @@ body{
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
 }
-.medium
+
 /*!---------------------NAV BAR-------------------- */
 .header{
-  height: 150px;
+  height: 100px;
 }
 .navbar--container{
   background: radial-gradient(circle at 50% 50%, 
@@ -134,7 +129,7 @@ body{
   #16181a, #131416, 
   #0f1112, #0a0c0d, 
   #050607, #000000);
- border-radius: 30px;
+  border-radius: 30px;
 }
 .menu--link{
   transition: all 300ms ease-in-out;
@@ -243,6 +238,13 @@ section {
   left: 0px;
   z-index: 2001;
 }
+.logo {
+  height: 7rem;
+  transition: all 500ms ease-in-out;
+  filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
+}
+
+
 .icon-div{
   background: radial-gradient(circle at 50% 50%, 
   #212529, #1e2225, 
@@ -335,31 +337,38 @@ section {
   
 }
 @media screen and (max-width: 1000px){
+  
   .icon-div{
-    border-radius: 100px;
     position: fixed;
-    margin: 15px;
-    width: 350px;
-    height:70px;
+    margin: auto;
+    width: 100%;
+    height:100px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     flex-direction: row;
-    top: 87%;
-    left: 1%;
-    z-index: 100;
+    z-index: 10000;
+    top:90%;
   }
   .icon{
     filter: drop-shadow(0px 0px 1px black);
     margin:0;
   }
+
+  .logo-div{
+    width: 80px;   
+    height:70px;
+  }
   .logo {
-    height: 4rem;
+    height: 3rem;
     transition: all 500ms ease-in-out;
     filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
   }
   .medium{
     margin:0;
+  }
+  .footer{
+    margin-bottom: 5rem;
   }
 }
 @media screen and (max-width: 700px){

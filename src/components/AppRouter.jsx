@@ -6,6 +6,7 @@ import Projects from './Projects';
 import Videos from './Videos';
 import Contact from './Contact';
 import Resume from './Resume';
+import PTCertificate from './PTCertificate';
 
 export default function AppRouter() {
 
@@ -21,6 +22,8 @@ export default function AppRouter() {
       <Route path="/contact" element={<Contact />} />
 
       <Route path="/resume" element={<Resume />} />
+
+      <Route path="/promineocertificate" element={<PTCertificate />} />
       
       <Route path="*" element={<Error />} />
 
