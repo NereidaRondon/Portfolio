@@ -13,7 +13,7 @@ export default function NavBar() {
              
         <Typography variant='h4' className='' fontFamily={'Shadows Into Light Two'}>
         
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='hamburger mb-5'/>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className='hamburger mt-4 mb-4'/>
           <Navbar.Collapse id="responsive-navbar-nav hamburger" className=''>
 
             <Nav className="m-auto justify-content-center navbar--container">

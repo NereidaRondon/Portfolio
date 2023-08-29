@@ -10,7 +10,7 @@ export default function Error(){
 
       <Box sx={{bgcolor:'', pt:5}} maxWidth="md">
 
-        <img className='error' src={hamster} width='450'/>
+        <img className='error' src={hamster} width='450'alt='Error 404, page not found.'/>
         
       </Box>
       <Box sx={{ pb:5}} maxWidth="md">

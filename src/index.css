@@ -15,16 +15,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.bg{
-  background: linear-gradient(135deg, #120134, #12023f, #10024b, #0c0359, #050468, #050d76, #061982, #07238d, #082b94, #082e96);
+.bg{  
+  background: linear-gradient(90deg, #1b024f, #1d0457, #1e0760, #200a69, #200d72, #20117b, #201584, #1e198d, #1c1d97, #1821a1, #1025ab, #0229b5);
   background-size: cover;
   width:100%;
-  /* background: linear-gradient(
-    125deg, 
-    #20023a 0%, #2a0269 50%, #0a38b8 75%, #0854b8 100%
-  ); */
   background-size: 200%;
-  animation: bg-animation 15s infinite alternate;
+  animation: bg-animation 5s infinite alternate;
 }
 @keyframes bg-animation {
     0%{

@@ -29,7 +29,7 @@ export default function Home(){
             
             <Intro ref={refIntro}/>
 
-            <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-3s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50'/>
+            <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-3s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50' height='50'/>
           
           </Box>
 
@@ -39,7 +39,7 @@ export default function Home(){
 
             <About ref={refAbout}/>         
 
-            <Image aria-roledescription='button' onClick={handleTechScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50'/>
+            <Image aria-roledescription='button' onClick={handleTechScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50'  height='50'/>
           </Box>
 
           <Box className='space' ></Box>

@@ -130,12 +130,14 @@ body{
   #0f1112, #0a0c0d, 
   #050607, #000000);
   border-radius: 30px;
+  /* border: 1.5px solid rgb(2, 136, 255); */
+  filter: drop-shadow(0px 0px 4px rgb(2, 136, 255, .8));
 }
 .menu--link{
   transition: all 300ms ease-in-out;
-  margin-bottom: 4px;
+  margin: 4px 0;
   border-bottom: 2px solid rgba(2, 136, 209, 0);
-  line-height: 25px;
+  line-height: 30px;
 }
 
 .menu--link:hover {
@@ -149,20 +151,20 @@ button.hamburger{
 /*!---------------------HOME----------------------- */
 .title{
   text-align: center;
-  background: -webkit-linear-gradient(rgb(233, 207, 255), rgb(119, 205, 255));
+  background: -webkit-linear-gradient(rgb(255,255,255), rgb(233, 207, 255), rgb(119, 205, 255), rgb(255,255,255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(2px 2px 2px black);
 }
 .title2{
   text-align: center;
-  background: -webkit-linear-gradient(rgb(3, 104, 255), rgb(255, 0, 242));
+  background: -webkit-linear-gradient(rgb(255,255,255), rgb(3, 104, 255), rgb(255, 0, 242), rgb(255,255,255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(1.5px 2px 1px black);
 }
 .subtitle{
-  background: -webkit-linear-gradient(rgb(78, 186, 248), rgb(238, 152, 255));
+  background: -webkit-linear-gradient(rgb(255,255,255), rgb(78, 186, 248), rgb(241, 171, 255), rgb(255,255,255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(1px 1px 1px black);
@@ -170,7 +172,7 @@ button.hamburger{
 }
 .title-dark-bg{
   filter: drop-shadow(.75px .75px 1px black);
-  background: -webkit-linear-gradient(rgb(134, 207, 250), rgb(228, 182, 255));
+  background: -webkit-linear-gradient(rgb(255,255,255), rgb(134, 207, 250), rgb(228, 182, 255),rgb(255,255,255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -205,14 +207,11 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
-  
 }
-
 .skill{
   filter: drop-shadow(8px 6px 3px rgba(0, 0, 0, .8));
   transition: all 200ms ease-in-out;
 }
-
 .skill:hover{
   transform:scale(1.15);
 }
@@ -353,7 +352,7 @@ section {
   }
   .icon{
     filter: drop-shadow(0px 0px 1px black);
-    margin:0 2rem;
+    margin:0 1rem;
   }
   .logo-div{
     width: 80px;   
@@ -365,12 +364,18 @@ section {
     filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
   }
   .medium{
-    margin:0 2rem;
+    margin:0 1rem;
   }
   .footer{
     margin-bottom: 5rem;
   }
 }
+@media screen and (max-width: 800px){
+  .navbar--container{
+    border-radius: 10px;
+    width: 60dvw;
+  }
+}    
 @media screen and (max-width: 700px){
   .course--frame{
     height: 340px;
@@ -384,9 +389,12 @@ section {
   .subtitle{
     filter: drop-shadow(.75px .75px .10px black);
   }
-  .skill{
-    width: 35px;
-    height: 35px;
+  .skills--container{
+    gap: 0px;
+  }
+  .skill-icon{
+    width: 40px;
+    height: 40px;
   }
 } 
 @media screen and (max-width: 500px){

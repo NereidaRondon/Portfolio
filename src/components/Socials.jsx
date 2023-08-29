@@ -19,7 +19,7 @@ export default function Socials(){
 
           <LinkContainer to="/"> 
             <Navbar.Brand href='#home' className='logo m-0 p-0 justify-content-start'>
-              <img src={logo} className='logo m-0 p-0 bounce' alt='' />
+              <img src={logo} className='logo m-0 p-0 bounce' alt='Click to go back to home' />
             </Navbar.Brand>
           </LinkContainer>
         </Box>
@@ -28,21 +28,22 @@ export default function Socials(){
 
         </Box>
 
-        <Link to='mailto: nereida.rondon5@gmail.com' target='_blank' className='icon'>
+        <Link to='mailto: nereida.rondon5@gmail.com' target='_blank' className='icon' aria-label='Send me an email.'>
             <AlternateEmailIcon sx={{ fontSize: 40}} color="secondary" />
         </Link>
     
-        <Link to='https://www.linkedin.com/in/nereidarondon/' target='_blank' className='icon'>
+        <Link to='https://www.linkedin.com/in/nereidarondon/' target='_blank' className='icon' aria-label='View my 
+        LinkedIn profile.'>
             <LinkedInIcon sx={{ fontSize: 40}} color="info" />
         </Link>
         
-        <Link to='https://github.com/NereidaRondon' target='_blank' className='icon'>
+        <Link to='https://github.com/NereidaRondon' target='_blank' className='icon' aria-label='See my GitHub account.'>
             <GitHubIcon sx={{ fontSize: 40, color: pink[200] }}   
             data-aos="flip-down" />
         </Link>
 
-        <Link to='https://medium.com/@nereidarondon' target='_blank'>
-            <img className='medium pt-1' src={medium} width='40'/>
+        <Link to='https://medium.com/@nereidarondon' target='_blank' aria-label='Visit my Medium blog.'>
+            <img className='medium pt-1' src={medium} width='40' alt='Visit my Medium blog.'/>
         </Link>
 
       </Box>

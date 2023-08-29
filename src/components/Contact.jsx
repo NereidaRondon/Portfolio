@@ -9,9 +9,9 @@ export default function Contact(){
 
   return(
     
-    <Container id='contact' className='shadow' sx={{backgroundColor:'#c7c7c7', boxShadow: 20, my:6}} maxWidth='md'>
+    <Container id='contact' className='shadow' sx={{backgroundColor:'#c7c7c7', boxShadow: 20, my:3, px:2}} maxWidth='md'>
         
-    <Typography className='title2' sx={{py:4}} variant='h3' fontFamily={'Shadows Into Light Two'}>Want to work together? Contact me!</Typography>
+    <Typography className='title2' sx={{pt:3, pb:1, mx:2}} variant='h2' fontFamily={'Shadows Into Light Two'}>Want to work together? <br></br>Contact me!</Typography>
 
       <Container sx={{bgcolor:{color1}, pt:4 }} maxWidth='md'>
         <form name="contact" method="POST" action="/contact">
@@ -44,7 +44,7 @@ export default function Contact(){
             name='email'
             fullWidth
             required
-            sx={{mb: 5}}
+            sx={{mb: 4}}
           />
 
           <TextField
@@ -57,10 +57,10 @@ export default function Contact(){
             fullWidth
             spellCheck="true"
             required
-            sx={{fontSize:'1.25rem', pb:1}}
+            sx={{fontSize:'1.25rem'}}
           />
 
-          <Button sx={{my:6, px:4, fontSize:'1.25rem',}} 
+          <Button sx={{my:4, px:3, fontSize:'1.25rem',}} 
                   variant="contained"  
                   endIcon={<SendIcon />} 
                   size="large" 

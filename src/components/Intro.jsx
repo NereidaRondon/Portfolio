@@ -8,10 +8,12 @@ function Intro(props, refAbout){
 
   return(
     
-    <Container ref={refAbout} sx={{mt:1, pt:3}} maxWidth="md">
+    <Container ref={refAbout} sx={{mt:1}} maxWidth="md">
 
 
         <Image className='bitmoji' src={bitmoji} alt="Nereida's bitmoji" 
+              height='300'
+              width='350'
               data-aos="zoom-in"
               data-aos-offset="20"
               data-aos-delay="20"
@@ -22,13 +24,13 @@ function Intro(props, refAbout){
               data-aos-anchor-placement="top-center"
               />
         
-        <Typography className='title' sx={{pt:2,}} bgcolor='dark' variant='h2' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
+        <Typography className='title' sx={{pt:2}} bgcolor='dark' variant='h1' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
-        <Typography className='subtitle' sx={{pt:1, pb:5}} fontFamily={'Poppins'} variant='h4'>
+        <Typography className='subtitle' sx={{pt:1, pb:5, fontSize:'2.25rem'}} fontFamily={'Poppins'} >
           Instructional Design & Frontend Development
         </Typography>
         
-        <Typography className='' sx={{py:2, mx:2, pb:5}} fontFamily={'Poppins'} variant='h5'>
+        <Typography className='' sx={{pb:5, fontSize:'1.5rem'}} fontFamily={'Poppins'}>
           Blending the realms of education and software development by crafting web learning experiences...
         </Typography>
     

@@ -217,7 +217,7 @@ export default function Projects() {
 
     <Container id='projects' className='' sx={{pb:10, textAlign:'center'}} maxWidth='lg'> 
       
-      <Typography className='title' sx={{py:5}} variant='h3' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
+      <Typography className='title' sx={{py:5}} variant='h2' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
         <Grid container spacing={3} columns={{ xs: 4, sm: 4, md: 8, lg:12 }}>
           <ProjectTile />
         </Grid>

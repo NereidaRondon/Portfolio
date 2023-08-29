@@ -16,14 +16,14 @@ function About(props, refAbout){
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
 
-            <Typography className='title' sx={{pt:2, pb:2}} bgcolor='dark' variant='h3' fontFamily={'Shadows Into Light Two'}>About Me</Typography>
+            <Typography className='title' sx={{pt:2, pb:2}} bgcolor='dark' variant='h2' fontFamily={'Shadows Into Light Two'}>About Me</Typography>
 
-            <Typography variant='h6' sx={{px:1, py:1, textAlign: 'left'}} fontFamily={'Poppins'}>
+            <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
               My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm eager to learn and dedicated to staying current with emerging technologies.
             </Typography>
 
-            <Typography variant='h6' sx={{px:1, py:1, textAlign: 'left'}} fontFamily={'Poppins'}>
+            <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
             Explore my projects and experience. Whether you're seeking a dedicated team member or looking to collaborate, I'm just a message away. Let's connect!
             </Typography>
           </Box>

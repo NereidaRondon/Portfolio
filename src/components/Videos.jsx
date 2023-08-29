@@ -19,7 +19,7 @@ export default function Media() {
 
     <Container className='media--container' sx={{pb:10}} maxWidth='md'> 
       
-      <Typography className='title' sx={{py:6}} variant='h3' fontFamily={'Shadows Into Light Two'}>Videos</Typography>
+      <Typography className='title' sx={{py:6}} variant='h2' fontFamily={'Shadows Into Light Two'}>Videos</Typography>
 
       <Box sx={{ flexGrow: 1 }}>
       
