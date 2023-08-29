@@ -42,7 +42,7 @@ export default function Socials(){
         </Link>
 
         <Link to='https://medium.com/@nereidarondon' target='_blank'>
-            <img className='medium' src={medium} width='35'/>
+            <img className='medium pt-1' src={medium} width='40'/>
         </Link>
 
       </Box>

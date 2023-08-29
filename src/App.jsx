@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from '@mui/material';
 import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
 import NavBar from './components/NavBar';
@@ -19,7 +18,7 @@ export default function App() {
   return (
     <React.Fragment>
       <CssBaseline />
-        <Container >
+        
           
           <Socials />
           <NavBar />
@@ -27,7 +26,7 @@ export default function App() {
           <AppRouter />
           <Footer /> 
         
-        </Container>
+        
     </React.Fragment>
   );
 }

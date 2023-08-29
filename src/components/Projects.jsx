@@ -127,8 +127,8 @@ export default function Projects() {
 
         projectDetails.map((item, index)=>(
 
-          <Grid key={index} xs={12} md={6} xl={4} sx={{display: 'flex', justifyContent: 'center'}}> 
-            <Card key={index} className='card--style' sx={{ maxWidth: 450, boxShadow: 10, borderRadius:5, bgcolor:'#c7c7c7', my:2}}>
+          <Grid key={index} xs={12} md={12} lg={6} xl={4} sx={{display: 'flex', justifyContent: 'center'}}> 
+            <Card key={index} className='card--style' sx={{ maxWidth: 450, boxShadow: 10, borderRadius:5, bgcolor:'#c7c7c7', m:2}}>
               <Link to={item.link} target='_blank'>
                   <CardActionArea >
                     <CardMedia
@@ -140,7 +140,7 @@ export default function Projects() {
                   </CardActionArea>
               </Link>
 
-              <CardContent sx={{ height:160 }}>
+              <CardContent sx={{ height:180 }}>
                 <Typography gutterBottom variant="h4" component="div" fontFamily={'Shadows Into Light Two'}>
                   {item.title}
                 </Typography>

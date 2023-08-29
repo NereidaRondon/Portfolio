@@ -6,8 +6,8 @@ function Tech(props, refTech){
 
   return (
    
-      <Container className='' ref={refTech} maxWidth="lg" sx={{pt:15, pb:10}} >
-        <Container className='skills--wrapper' maxWidth="lg" sx={{p:2}} 
+      <Container className='' ref={refTech} sx={{pt:15, pb:10}} >
+        <Container className='skills--wrapper' sx={{p:1}} 
             data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="25"
@@ -17,9 +17,9 @@ function Tech(props, refTech){
             data-aos-once="false"
             data-aos-anchor-placement="top-center">
 
-          <Typography className='title2 ' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
+          <Typography className='title2 m-auto' sx={{pt:2, pb:3}} variant='h3' fontFamily={'Shadows Into Light Two'}>Technologies I am skilled in...</Typography>
 
-          <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', py:4}}>   
+          <Container className='skills--container' maxWidth="lg" sx={{display: 'flex', py:1, mb:2, justifyContent:'center'}}>   
                  
 
              <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="60" height="60" alt="JavaScript" /></a></Box>
@@ -40,11 +40,13 @@ function Tech(props, refTech){
 
 
 
-            <Box className='skill' sx={{m:2 }}><a  href="https://firebase.google.com/" target="_blank" rel="noreferrer"><img src="https://create-react-app.dev/img/logo.svg" width="60" height="60" alt="Create React App" /></a></Box>
+            <Box className='skill' sx={{m:2 }}><a  href="https://https://create-react-app.dev/" target="_blank" rel="noreferrer"><img src="https://create-react-app.dev/img/logo.svg" width="60" height="60" alt="Create React App" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://react-bootstrap.github.io/" target="_blank" rel="noreferrer"><img src="https://react-bootstrap.github.io/img/logo.svg" width="60" height="60" alt="React-Bootstrap" /></a></Box>
 
             <Box className='skill' sx={{m:2 }}><a  href="https://mui.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/materialui-colored.svg" width="60" height="60" alt="Material UI" /></a></Box>
+
+            <Box className='skill' sx={{m:2 }}><a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="60" height="60" alt="TailwindCSS" /></a></Box>
 
 
             {/* <Box className='skill' sx={{m:2 }}><a  href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/webpack-colored.svg" width="60" height="60" alt="Webpack" /></a></Box> */}
