@@ -20,12 +20,14 @@ function About(props, refAbout){
 
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
-              My journey has encompassed a diverse range of skills, from curriculum development and data analysis to project management. I excel in creating engaging, accessible learning experiences by blending technical expertise with educational insight. I'm eager to learn and dedicated to staying current with emerging technologies.
+              I encompass a diverse range of skills, from teaching to curriculum development and project management to programming. I've taken the initiative in my professional development by continuing to learn and grow as a software engineer on my free time because I believe in forging my own path rather than waiting for opportunities to come knocking. My non-traditional background brings a fresh perspective to problem-solving, with a deep commitment to self-growth.
             </Typography>
 
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
-            Explore my projects and experience. Whether you're seeking a dedicated team member or looking to collaborate, I'm just a message away. Let's connect!
+
+              As a first-generation Hispanic woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the educators who served as my role models. While a tech career once seemed out of reach, I'm now confidently pivoting. I'm fueled by a belief in my own capabilities and hoping to show my own children what is possible.
             </Typography>
+
           </Box>
 
           
