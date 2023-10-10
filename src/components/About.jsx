@@ -1,6 +1,5 @@
 import React, { forwardRef } from 'react';
-import { Box, Container, Typography, Button } from '@mui/material';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import { Box, Container, Typography } from '@mui/material';
 
 function About(props, refAbout){
       return(
@@ -29,19 +28,6 @@ function About(props, refAbout){
             </Typography>
 
           </Box>
-
-          
-            <Button sx={{my:6, px:5, fontSize:'1.25rem', boxShadow:8}} 
-                className='resume--btn' 
-                variant='contained'  
-                endIcon={<PictureAsPdfIcon />} 
-                size='large' 
-                color='secondary' 
-                elevation='5' 
-                href='/resume'
-                target = '_blank'
-            >Resume
-            </Button>
       
 
         </Container>

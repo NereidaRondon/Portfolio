@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { LinkContainer } from 'react-router-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -26,9 +26,9 @@ export default function NavBar() {
                 <Nav.Link  className='ps-5 pe-5' ><div className='menu--link px-1'>Projects</div></Nav.Link>
               </LinkContainer> 
 
-              <LinkContainer to="/videos">
+              {/* <LinkContainer to="/videos">
                 <Nav.Link className='ps-5 pe-5' ><div className='menu--link px-1'>Videos</div></Nav.Link>
-              </LinkContainer>  
+              </LinkContainer>   */}
 
               <LinkContainer to="/contact">
                 <Nav.Link className='ps-5 pe-5' ><div className='menu--link'>Contact</div></Nav.Link>

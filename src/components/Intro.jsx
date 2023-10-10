@@ -1,10 +1,12 @@
 import React, { useRef, forwardRef } from 'react';
 import Image from 'react-bootstrap/Image';
-import {Container, Typography } from '@mui/material';
+import {Container, Typography, Button } from '@mui/material';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 
 import bitmoji from '../assets/bitmoji.svg';
 
 function Intro(props, refAbout){
+  const code = '{ code }';
 
   return(
     
@@ -24,15 +26,27 @@ function Intro(props, refAbout){
               data-aos-anchor-placement="top-center"
               />
         
-        <Typography className='title' sx={{pt:2}} bgcolor='dark' variant='h1' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
+        <Typography className='title' sx={{pt:1}} bgcolor='dark' variant='h1' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
-        <Typography className='subtitle' sx={{pt:1, pb:5, fontSize:'2.25rem'}} fontFamily={'Poppins'} >
+        <Typography className='subtitle' sx={{pb:5, fontSize:'2.25rem'}} fontFamily={'Poppins'} >
           Frontend Software Engineer
         </Typography>
         
         <Typography className='' sx={{pb:5, fontSize:'1.5rem'}} fontFamily={'Poppins'}>
-          Fueling my passion for web design, one pixel at a time
+          Fueling my passion for programming, one line of {code} at a time 
         </Typography>
+
+        <Button sx={{my:3, px:5, fontSize:'1.25rem', boxShadow:8}} 
+            className='resume--btn' 
+            variant='contained'  
+            endIcon={<PictureAsPdfIcon />} 
+            size='large' 
+            color='secondary' 
+            elevation='5' 
+            href='/resume'
+            target = '_blank'
+          >Resume
+        </Button>
     
     </Container>
     
