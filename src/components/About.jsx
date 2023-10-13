@@ -19,13 +19,13 @@ function About(props, refAbout){
 
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
+              As a first-generation Hispanic woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the educators who served as my role models. While a tech career once seemed out of reach, I'm now confidently pivoting. I'm fueled by a belief in my own capabilities and hoping to show my own children what is possible.
+            </Typography>
+            <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
+
               I encompass a diverse range of skills, from teaching to curriculum development and project management to programming. I've taken the initiative in my professional development by continuing to learn and grow as a software engineer on my free time because I believe in forging my own path rather than waiting for opportunities to come knocking. My non-traditional background brings a fresh perspective to problem-solving, with a deep commitment to self-growth.
             </Typography>
 
-            <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
-
-              As a first-generation Hispanic woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the educators who served as my role models. While a tech career once seemed out of reach, I'm now confidently pivoting. I'm fueled by a belief in my own capabilities and hoping to show my own children what is possible.
-            </Typography>
 
           </Box>
       
