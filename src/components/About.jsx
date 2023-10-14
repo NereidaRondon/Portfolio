@@ -19,7 +19,7 @@ function About(props, refAbout){
 
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
-              As a first-generation Hispanic woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the educators who served as my role models. While a tech career once seemed out of reach, I'm now confidently pivoting. I'm fueled by a belief in my own capabilities and hoping to show my own children what is possible.
+              As a first-generation Hispanic-American woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the only role models that were present, my teachers. While a tech career once seemed out of reach, I'm now confidently pivoting. I'm fueled by a belief in my own capabilities and hoping to inspire my own children, to give them a role model close to home.
             </Typography>
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
