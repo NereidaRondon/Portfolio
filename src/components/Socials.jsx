@@ -42,10 +42,15 @@ export default function Socials(){
             data-aos="flip-down" />
         </Link>
 
-        <Link to='https://medium.com/@nereidarondon' target='_blank' aria-label='Visit my Medium blog.'>
+        {/* <Link to='https://medium.com/@nereidarondon' target='_blank' aria-label='Visit my Medium blog.'>
             <img className='medium pt-1' src={medium} width='40' alt='Visit my Medium blog.'/>
+        </Link> */}
+
+        <Link to='https://www.youtube.com/@nereida.rondon' target='_blank' aria-label='Visit my YouTube channel.'>
+            <img className='medium pt-1' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/youtube.svg" width='40' alt='Visit my Medium blog.'/>
         </Link>
 
+        
       </Box>
     </>
   );

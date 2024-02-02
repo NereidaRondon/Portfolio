@@ -80,6 +80,10 @@ function Tech(props, refTech){
               <Box className='skill' sx={{m:2 }}><a href="https://www.adobe.com/products/illustrator.html" target="_blank" rel="noreferrer"><img className='skill-icon' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="60" height="60" alt="Illustrator" /></a></Box>
             </Tooltip>
 
+            <Tooltip title="Java" placement="bottom">
+              <Box className='skill' sx={{m:2 }}><a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer"><img className='skill-icon' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="60" height="60" alt="Java" /></a></Box>
+            </Tooltip>
+
             <Tooltip title="MySQL" placement="bottom">
               <Box className='skill' sx={{m:2 }}><a  href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img className='skill-icon' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="60" height="60" alt="MySQL" /></a></Box>
             </Tooltip>

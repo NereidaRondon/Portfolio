@@ -26,9 +26,9 @@ export default function NavBar() {
                 <Nav.Link  className='ps-5 pe-5' ><div className='menu--link px-1'>Projects</div></Nav.Link>
               </LinkContainer> 
 
-              <LinkContainer to="/videos">
+              {/* <LinkContainer to="/videos">
                 <Nav.Link className='ps-5 pe-5' ><div className='menu--link px-1'>Videos</div></Nav.Link>
-              </LinkContainer>  
+              </LinkContainer>   */}
 
               <LinkContainer to="/contact">
                 <Nav.Link className='ps-5 pe-5' ><div className='menu--link'>Contact</div></Nav.Link>
