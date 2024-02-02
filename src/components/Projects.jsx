@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Box, IconButton, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Paper, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
-import Grid from '@mui/material/Unstable_Grid2';
+import Grid from '@mui/material/Grid';
 // import Grid from '@mui/material/Grid';
 import gradebook from '../assets/gradebook.svg';
 import weather from '../assets/weather.svg';
