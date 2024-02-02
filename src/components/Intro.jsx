@@ -28,8 +28,8 @@ function Intro(props, refAbout){
         
         <Typography className='title' sx={{pt:1}} bgcolor='dark' variant='h1' fontFamily={'Shadows Into Light Two'}>Nereida Rondon</Typography>
         
-        <Typography className='subtitle' sx={{pb:5, fontSize:'2.25rem'}} fontFamily={'Poppins'} >
-          Instructional and Software Designer
+        <Typography className='subtitle' sx={{pb:5, fontSize:'2.25rem'}} fontFamily={'Poppins'}>
+          Software Designer
         </Typography>
         
         <Typography className='' sx={{pb:5, fontSize:'1.5rem'}} fontFamily={'Poppins'}>
