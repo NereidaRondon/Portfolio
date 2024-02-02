@@ -5,9 +5,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import medium from '../assets/medium.svg';
+//import medium from '../assets/medium.svg';
 import { grey } from '@mui/material/colors';
-import { Box } from "@mui/material";
+import { Box } from '@mui/material';
 export default function Socials(){
 
   return(
