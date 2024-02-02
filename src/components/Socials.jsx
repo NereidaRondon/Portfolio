@@ -6,7 +6,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import medium from '../assets/medium.svg';
-import { pink } from '@mui/material/colors';
+import { grey } from '@mui/material/colors';
 import { Box } from "@mui/material";
 export default function Socials(){
 
@@ -38,7 +38,7 @@ export default function Socials(){
         </Link>
         
         <Link to='https://github.com/NereidaRondon' target='_blank' className='icon' aria-label='See my GitHub account.'>
-            <GitHubIcon sx={{ fontSize: 40, color: pink[200] }}   
+            <GitHubIcon sx={{ fontSize: 40, color: grey[A100] }}   
             data-aos="flip-down" />
         </Link>
 
@@ -47,7 +47,7 @@ export default function Socials(){
         </Link> */}
 
         <Link to='https://www.youtube.com/@nereida.rondon' target='_blank' aria-label='Visit my YouTube channel.'>
-            <img className='medium pt-1' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/youtube.svg" width='40' alt='Visit my Medium blog.'/>
+            <img className='youtube pt-1' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/youtube.svg" width='40' alt='Visit my YouTube channel.'/>
         </Link>
 
         
