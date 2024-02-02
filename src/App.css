@@ -221,7 +221,7 @@ section {
 }
 /*! ------------------ ICONS ------------------- */
 .youtube{
-  filter: invert(67%) sepia(10%) saturate(1822%) hue-rotate(291deg) brightness(99%) contrast(93%);
+  filter: invert(0%) sepia(100%) saturate(7433%) hue-rotate(65deg) brightness(114%) contrast(115%) invert(67%) sepia(10%) saturate(1822%) hue-rotate(291deg) brightness(99%) contrast(93%);
   margin: 22px 0;
   transition: all 200ms ease-in-out;
 }
