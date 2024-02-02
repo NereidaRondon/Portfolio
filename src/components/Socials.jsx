@@ -38,7 +38,7 @@ export default function Socials(){
         </Link>
         
         <Link to='https://github.com/NereidaRondon' target='_blank' className='icon' aria-label='See my GitHub account.'>
-            <GitHubIcon sx={{ fontSize: 40, color: grey[A100] }}   
+            <GitHubIcon sx={{ fontSize: 40, color: grey[50] }}   
             data-aos="flip-down" />
         </Link>
 
