@@ -225,7 +225,7 @@ section {
   margin: 22px 0;
   transition: all 200ms ease-in-out;
 }
-.medium:hover{
+.youtube:hover{
   transform: scale(1.1);
 }
 .logo-div{
@@ -363,7 +363,7 @@ section {
     transition: all 500ms ease-in-out;
     filter: drop-shadow(3px 4px 5px rgba(0, 0, 0, 0.8));
   }
-  .medium{
+  .youtube{
     margin:0 1rem;
   }
   .footer{
