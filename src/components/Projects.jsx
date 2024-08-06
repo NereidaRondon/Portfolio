@@ -215,16 +215,17 @@ export default function Projects() {
       
       <Typography className='title' sx={{py:5}} variant='h2' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
 
-        <Grid class='ml-0' container >
+        <Grid class='ml-0' container spacing={3}>
           <ProjectTile />
         </Grid>
 
       
       <Typography className='title' sx={{py:5, pt:16}} variant='h3' fontFamily={'Shadows Into Light Two'}>More of my Project Work</Typography>
 
-        <Grid class='ml-0' container  > 
+        <Grid class='ml-0' container spacing={1}>
           <OtherProjects />
         </Grid>
+
      
     </Container>
 
