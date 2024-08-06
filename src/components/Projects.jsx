@@ -10,16 +10,12 @@ import weather from '../assets/weather.svg';
 import movie from '../assets/movie.svg';
 import locksmith from '../assets/locksmith.svg';
 import todo from '../assets/todo.svg';
-import kinda from '../assets/Kinda.svg';
+import kinda from '../assets/kinda.svg';
 import { grey } from '@mui/material/colors';
 
 
 export default function Projects() {
-
-
-  const accent = grey[900];
-
-    
+ 
     const projectDetails = [
         {
           link: 'https://myweatherdashboard.netlify.app/',
@@ -218,13 +214,15 @@ export default function Projects() {
     <Container id='projects' className='' sx={{pb:10, textAlign:'center'}} maxWidth='lg'> 
       
       <Typography className='title' sx={{py:5}} variant='h2' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
-        <Grid container spacing={3} columns={{ xs: 4, sm: 4, md: 8, lg:12 }}>
+
+        <Grid class='ml-0' container >
           <ProjectTile />
         </Grid>
 
       
-      <Typography className='title' sx={{py:6, pt:16}} variant='h3' fontFamily={'Shadows Into Light Two'}>More of my Project Work</Typography>
-        <Grid container spacing={3} columns={{ xs: 4, sm: 4, md: 8, lg:12 }}> 
+      <Typography className='title' sx={{py:5, pt:16}} variant='h3' fontFamily={'Shadows Into Light Two'}>More of my Project Work</Typography>
+
+        <Grid class='ml-0' container  > 
           <OtherProjects />
         </Grid>
      

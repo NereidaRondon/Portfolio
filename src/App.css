@@ -333,7 +333,7 @@ section {
   opacity: 1;
   
 }
-@media screen and (max-width: 1150px){
+@media screen and (max-width: 1200px){
   
   .icon-div{
     position: fixed;
