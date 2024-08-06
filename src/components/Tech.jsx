@@ -5,7 +5,7 @@ function Tech(props, refTech){
 
   return (
    
-      <Container className='' ref={refTech} sx={{pt:15, pb:10}} >
+      <Container className='' ref={refTech} sx={{pt:20, pb:10}} >
 
 
         <Container className='skills--wrapper' sx={{p:1}} 
@@ -24,7 +24,7 @@ function Tech(props, refTech){
                  
 
             <Tooltip title="JavaScript" placement="bottom">
-              <Box x className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img className='skill-icon' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="60" height="60" alt="JavaScript" /></a></Box>
+              <Box className='skill' sx={{m:2 }}><a  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img className='skill-icon' src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="60" height="60" alt="JavaScript" /></a></Box>
             </Tooltip>
 
             <Tooltip title="Git" placement="bottom">

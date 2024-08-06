@@ -19,11 +19,11 @@ function About(props, refAbout){
 
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
-              As a first-generation Hispanic-American woman and the first in my family to earn a college degree, my path has been carved with resilience. My early career in teaching was inspired by the only role models that were present, my teachers. While a tech career once seemed out of reach, I have been able to confidently pivot into Instructional design. Fueled by a belief in my own capabilities, I hope to inspire my own children by giving them a role model close to home.
+              As a first-generation Hispanic-American and the first in my family to earn a college degree, my journey is built on resilience. Inspired by my teachers, I began in education and confidently pivoted into tech as an instructional designer. I aim to inspire my children by being a role model close to home.
             </Typography>
             <Typography sx={{px:1, py:1, textAlign: 'left', fontSize:'1.5rem'}} fontFamily={'Poppins'}>
 
-              I encompass a diverse range of skills, from teaching to curriculum development and project management to programming. I've taken the initiative in my professional development by continuing to learn and grow as a software engineer on my free time because I believe in forging my own path rather than waiting for opportunities to come knocking. My non-traditional background brings a fresh perspective to problem-solving, with a deep commitment to self-growth. My perfect role would merge my experience in education and curriculum with my growing skill in software development. 
+              I bring a diverse skill set, from teaching and curriculum development to project management and programming. My non-traditional background offers a fresh perspective on problem-solving, driven by a commitment to continuous learning. I aim to contribute to a company's goals, enhance existing projects, and be a collaborative team player.
             </Typography>
 
 

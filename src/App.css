@@ -13,9 +13,7 @@ font-family: 'Shadows Into Light Two', cursive;
 /* *{
   border: .5px solid rgb(209, 13, 13);
 }  */
-.space{
-  height:200px;
-}
+
 body{
   font-family:'Poppins', sans-serif;
 }
@@ -335,7 +333,7 @@ section {
   opacity: 1;
   
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1150px){
   
   .icon-div{
     position: fixed;

@@ -8,7 +8,7 @@ export default function SocialIcons() {
   return (
     <Container className='footer' maxWidth='md' sx={{pt:10 }}>
 
-      <Typography sx={{pb:1}} fontFamily={'Poppins'}>
+      <Typography sx={{pb:5}} fontFamily={'Poppins'}>
         Website coded by Nereida Rondon ©️{year}
       </Typography>
 

@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import Socials from './components/Socials';
 
+
 export default function App() {
   
   // look in elements in dev tools for an attribute called data-scroll = "position from top" on body tag
@@ -19,13 +20,11 @@ export default function App() {
     <React.Fragment>
       <CssBaseline />
         
-          
           <Socials />
           <NavBar />
           <ScrollToTop />
           <AppRouter />
           <Footer /> 
-        
         
     </React.Fragment>
   );

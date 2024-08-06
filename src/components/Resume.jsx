@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from '@mui/material';
-import resume from '../assets/Resume.pdf';
+import resume from '../assets/Nereida_Rondon_Resume.pdf';
 
 export default function Resume(){
   return(

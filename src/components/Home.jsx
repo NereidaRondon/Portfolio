@@ -7,6 +7,8 @@ import { Box, Container } from '@mui/material';
 import Image from 'react-bootstrap/Image';
 
 export default function Home(){
+
+  
   const refIntro = useRef(null);
   const refAbout = useRef(null);
   const refTech = useRef(null);
@@ -21,6 +23,7 @@ export default function Home(){
     refTech.current?.scrollIntoView({ behavior: 'smooth', block: "start"});
   }
 
+
   return(
     <>
       <Container id='home' className='' sx={{}} maxWidth="md">
@@ -29,21 +32,18 @@ export default function Home(){
             
             <Intro ref={refIntro}/>
 
-            <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-3s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50' height='50'/>
+            <Image aria-roledescription='button' onClick={handleAboutScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slow	animate__infinite my-5' src={chevron} alt="scroll down" width='50' height='50'/>
           
           </Box>
-
-          <Box className='space' ></Box>
 
           <Box className='section'>
 
             <About ref={refAbout}/>         
 
-            <Image aria-roledescription='button' onClick={handleTechScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slow	animate__infinite' src={chevron} alt="scroll down" width='50'  height='50'/>
+            <Image aria-roledescription='button' onClick={handleTechScroll} className='chevron animate__animated animate__pulse animate__delay-5s animate__slow	animate__infinite my-5' src={chevron} alt="scroll down" width='50'  height='50'/>
           </Box>
 
-          <Box className='space' ></Box>
-
+         
           <Box className='section'>
 
             <Tech ref={refTech} />
