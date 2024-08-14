@@ -65,7 +65,7 @@ export default function OtherProjects() {
       
       otherProjectDetails.map((item, i)=>(
 
-        <Grid key={i} xs={12} sm={6} md={6} lg={4} xl={3} sx={{display: 'flex', justifyContent: 'center'}}>
+        <Grid key={i} xs={12} sm={6} md={6} lg={4} xl={3}  sx={{p:2, display:'flex', justifyContent: 'center' }}>
 
           <Card className='card--style other--projects' sx={{ width: 275, boxShadow: 10, borderRadius:6, my:2, bgcolor:'#c7c7c7'}}>
             
@@ -100,9 +100,10 @@ export default function OtherProjects() {
 
   return (
     <> 
-      <Typography className='title' sx={{py:5, pt:16}} variant='h3' fontFamily={'Shadows Into Light Two'}>More of my Project Work</Typography>
+      <Typography className='title' sx={{pt:20, pb:5}} variant='h3' fontFamily={'Shadows Into Light Two'}>More of my Project Work</Typography>
 
-        <Grid class='ml-0' container spacing={1} columns={{ xs: 4, sm: 8, md: 12, lg:12, xl:12 }}>
+        {/* <Grid class='' direction="row" justifyContent="center" container spacing={4} columns={{ xs: 4, sm: 8, md: 12, lg:12, xl:12 }}> */}
+        <Grid container>
           <OtherProjectTiles />
         </Grid>
     </>

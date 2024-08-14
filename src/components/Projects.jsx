@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { Box, IconButton, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Paper, Typography } from '@mui/material';
+import { IconButton, Card, CardActionArea, CardActions, CardContent, CardMedia, Container, Typography } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 //import Grid from '@mui/material/Grid';
@@ -74,7 +74,8 @@ export default function Projects() {
 
         projectDetails.map((item, index)=>(
 
-          <Grid key={index} xs={12} md={12} lg={6} xl={4} sx={{display: 'flex', justifyContent: 'center'}}> 
+          <Grid xs={12} sm={12} md={6} lg={6} xl={4}  sx={{display:'flex', justifyContent: 'center' }}>
+
             <Card key={index} className='card--style' sx={{ maxWidth: 450, boxShadow: 10, borderRadius:5, bgcolor:'#c7c7c7', m:2}}>
               <Link to={item.link} target='_blank'>
                   <CardActionArea >
@@ -114,27 +115,22 @@ export default function Projects() {
             </Card>
           </Grid>
 
-        
-
         ))
-
       );
     }
 
   return (
 
-    <Container id='projects' className='' sx={{mb:10, textAlign:'center'}} maxWidth='lg'> 
-      
+    <Container id='projects' maxWidth='lg'> 
+    
       <Typography className='title' sx={{py:5}} variant='h2' fontFamily={'Shadows Into Light Two'}>Projects</Typography>
 
-        <Grid class='ml-0' container spacing={3} columns={{ xs: 4, sm: 8, md: 12, lg:12, xl:12 }}>
+        <Grid container>
           <ProjectTile />
         </Grid>
-
       
-      <OtherProjects />
+        <OtherProjects />
 
-     
     </Container>
 
   );
