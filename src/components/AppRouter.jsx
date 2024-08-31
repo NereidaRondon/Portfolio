@@ -7,6 +7,8 @@ import Projects from './Projects';
 import Contact from './Contact';
 import Resume from './Resume';
 import PTCertificate from './PTCertificate';
+import ICPCert from './ICPCert';
+import Web102Cert from './Web102Cert';
 
 export default function AppRouter() {
 
@@ -24,6 +26,10 @@ export default function AppRouter() {
       <Route path="/resume" element={<Resume />} />
 
       <Route path="/promineocertificate" element={<PTCertificate />} />
+
+      <Route path="/icpcertificate" element={<ICPCert />} />
+
+      <Route path="/web102certificate" element={<Web102Cert />} />
       
       <Route path="*" element={<Error />} />
 
