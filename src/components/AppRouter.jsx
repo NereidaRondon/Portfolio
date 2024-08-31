@@ -30,9 +30,6 @@ export default function AppRouter() {
       <Route path="/icpcertificate" element={<ICPCert />} />
 
       <Route path="/web102certificate" element={<Web102Cert />} />
-      
-      <Route path="*" element={<Error />} />
-
-    </Routes>
+       </Routes>
   );
 }
