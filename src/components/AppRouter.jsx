@@ -9,6 +9,7 @@ import Resume from './Resume';
 import PTCertificate from './PTCertificate';
 import ICPCert from './ICPCert';
 import Web102Cert from './Web102Cert';
+import AI4allCert from './AI4allCert';
 
 export default function AppRouter() {
 
@@ -30,6 +31,9 @@ export default function AppRouter() {
       <Route path="/icpcertificate" element={<ICPCert />} />
 
       <Route path="/web102certificate" element={<Web102Cert />} />
+
+      <Route path="/ai4allcertificate" element={<AI4allCert />} />
+
        </Routes>
   );
 }
